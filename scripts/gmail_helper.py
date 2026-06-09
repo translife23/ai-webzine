@@ -14,12 +14,15 @@ def _client() -> resend.Emails:
 def send_admin_notification(to: str, subject: str, body: str) -> None:
     """관리자에게 텍스트 알림 이메일을 발송한다."""
     sender = os.environ.get("RESEND_SENDER_ADDRESS", "onboarding@resend.dev")
-    _client().send({
-        "from": sender,
-        "to": [to],
-        "subject": subject,
-        "text": body,
-    })
+    try:
+        _client().send({
+            "from": sender,
+            "to": [to],
+            "subject": subject,
+            "text": body,
+        })
+    except Exception as exc:
+        print(f"[WARN] 관리자 알림 발송 실패 ({to}): {exc}")
 
 
 def send_newsletter(recipients: list[str], subject: str, html_body: str) -> dict:
