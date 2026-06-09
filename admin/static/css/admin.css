@@ -29,7 +29,7 @@ body{font-family:'Pretendard','Apple SD Gothic Neo',-apple-system,sans-serif;bac
 .nav-item{display:block;padding:10px 20px;color:#94A3B8;text-decoration:none;font-size:14px;transition:all .15s;border-left:3px solid transparent}
 .nav-item:hover{color:#fff;background:#334155}
 .nav-item.active{color:#fff;background:#334155;border-left-color:var(--primary)}
-.sidebar-logout{margin:16px 20px 24px;width:calc(100% - 40px);color:#fff;border-color:#475569}
+.sidebar-logout{margin:16px 20px 24px;width:calc(100% - 40px);color:#fff !important;border-color:#475569}
 .main-content{margin-left:var(--sidebar-w);flex:1;padding:32px;min-height:100vh}
 
 /* 탭 패널 */
