@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ report_title }} — AI 웹진 {{ week_label }}</title>
+  <link rel="stylesheet" href="../../assets/css/webzine.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <a href="../../" style="text-decoration:none;color:inherit">
+            <span class="logo-text">AI 웹진</span>
+            <span class="logo-subtitle">정보시스템감리 AI 동향</span>
+          </a>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <span class="issue-badge">{{ week_label }}</span>
+          <span class="pub-date">{{ pub_date }}</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      {# ── 기획 보고서 ── #}
+      <section>
+        <div class="section-label">기획 보고서</div>
+        <div class="report-card">
+          <div class="report-title">{{ report_title }}</div>
+          <details>
+            <summary>보고서 전문 보기 ▾</summary>
+            <div class="report-body">
+              {{ report_html | safe }}
+            </div>
+          </details>
+        </div>
+      </section>
+
+      {# ── 뉴스 기사 ── #}
+      <section>
+        <div class="section-label">이번 주 AI 동향 — {{ articles | length }}건</div>
+        <div class="articles-grid">
+          {% for a in articles %}
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:{{ topic_colors[a.topic] | default('#1A56DB') }}">{{ a.topic }}</span>
+              {% if a.origin %}
+              <span class="topic-tag" style="background:{{ '#0EA5E9' if a.origin == '해외' else '#10B981' }};margin-left:4px">{{ a.origin }}</span>
+              {% endif %}
+            </div>
+            <div class="article-title">
+              <a href="{{ a.url }}" target="_blank" rel="noopener">{{ a.title_ko | default(a.title) }}</a>
+            </div>
+            <div class="article-summary">{{ a.summary_ko | default(a.summary) | truncate(120) }}</div>
+            <div class="article-meta">
+              <span>{{ a.source }}</span>
+              <span>{{ a.published_date | default('') }}</span>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong style="color:#fff">AI 웹진</strong> · 정보시스템감리 AI 동향</p>
+      <p style="margin-top:8px"><a href="../../archive/">전체 아카이브</a></p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/webzine.js"></script>
+</body>
+</html>

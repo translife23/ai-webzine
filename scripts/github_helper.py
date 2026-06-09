@@ -70,6 +70,18 @@ class GitHubHelper:
         """HTML 파일을 저장소에 저장한다."""
         self.write_text(path, html, message)
 
+    def list_dir(self, path: str) -> list[str]:
+        """디렉토리 내 항목 이름 목록을 반환한다. 없으면 빈 리스트."""
+        try:
+            contents = self._repo.get_contents(path)
+            if isinstance(contents, list):
+                return [c.name for c in contents]
+            return []
+        except GithubException as e:
+            if e.status == 404:
+                return []
+            raise
+
     def path_exists(self, path: str) -> bool:
         """저장소에 파일/디렉토리가 존재하는지 확인한다."""
         try:

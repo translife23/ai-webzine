@@ -3,9 +3,6 @@
 # Claude API
 anthropic>=0.30.0
 
-# 뉴스 검색 (RSS)
-feedparser>=6.0.11
-
 # 관리자 서버 (FastAPI)
 fastapi>=0.111.0
 uvicorn[standard]>=0.29.0
@@ -16,10 +13,8 @@ bcrypt>=4.1.0
 # GitHub API (데이터 저장)
 PyGithub>=2.3.0
 
-# Gmail API
-google-auth>=2.29.0
-google-auth-oauthlib>=1.2.0
-google-api-python-client>=2.130.0
+# 이메일 발송 (Resend)
+resend>=2.0.0
 
 # HTML/템플릿
 jinja2>=3.1.4

@@ -75,6 +75,27 @@ def update_plan(body: ThemePlan, session_id: str | None = Cookie(default=None)):
     return {"message": "기획 주제가 수정되었습니다."}
 
 
+@router.get("/history")
+def get_history(session_id: str | None = Cookie(default=None)):
+    """최근 기획 주제 이력 (최신순)"""
+    _get_current_user(session_id)
+    gh = GitHubHelper()
+    weeks = sorted(gh.list_dir("data/weekly"), reverse=True)
+    history = []
+    for week in weeks:
+        plan = gh.read_json(f"data/weekly/{week}/theme-plan.json")
+        if plan and plan.get("report_1"):
+            status_data = gh.read_json(f"data/weekly/{week}/status.json") or {}
+            history.append({
+                "week": week,
+                "agenda": plan["report_1"].get("agenda", ""),
+                "perspective": plan["report_1"].get("perspective", ""),
+                "submitted_at": plan.get("submitted_at"),
+                "status": status_data.get("status", "IDLE"),
+            })
+    return {"history": history}
+
+
 def _week_id() -> str:
     now = datetime.now(timezone.utc)
     return f"{now.year}-W{now.isocalendar()[1]:02d}"
