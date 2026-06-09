@@ -8,6 +8,15 @@
       "role": "admin",
       "email": "",
       "created_at": "2026-06-09T00:00:00Z"
+    },
+    {
+      "id": "m002",
+      "name": "김태완",
+      "username": "translife23",
+      "password_hash": "$2b$12$o9A6wuR02U2Eu2zz.HUeDu9dhknas9fmaWTPDjDoG/o.wZ9CIiGwe",
+      "role": "member",
+      "email": "translife23@itqi.kr",
+      "created_at": "2026-06-09T14:10:33.338600+00:00"
     }
   ]
 }
