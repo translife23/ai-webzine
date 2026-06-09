@@ -2,16 +2,14 @@
 Routine C 진입점 — 관리자 승인 즉시 API 트리거로 실행
 
 1. approval.json 존재 및 유효성 확인
-2. 웹진 최종 HTML 빌드 → site/issues/{week_id}/index.html 저장
-3. site/archive/index.html 업데이트
-4. GitHub 저장소 site/ 변경 → GitHub Pages 자동 배포
-5. 수신자 전체에 뉴스레터 발송 (Gmail API)
-6. 상태 PUBLISHED로 갱신, 관리자 발행 완료 알림
+2. webzine_builder.build() → site/issues/YYYY-WNN/index.html GitHub 커밋
+3. GitHub Pages 자동 배포 (deploy-pages.yml 트리거됨)
+4. 수신자 전체에 뉴스레터 발송 (Resend API)
+5. status.json → PUBLISHED, 관리자 발행 완료 알림
 
-원자성 보장: 웹진 배포 실패 시 뉴스레터 발송 안 함.
+원자성 보장: 웹진 빌드 실패 시 뉴스레터 발송하지 않음.
 """
 
-import json
 import os
 import sys
 from datetime import datetime, timezone
@@ -26,14 +24,6 @@ import webzine_builder
 from github_helper import GitHubHelper
 from gmail_helper import send_newsletter, send_admin_notification
 from routine_a_news_search import get_week_id
-
-
-def _get_issue_number(week_id: str) -> int:
-    try:
-        year, week = week_id.split("-W")
-        return (int(year) - 2026) * 52 + int(week)
-    except Exception:
-        return 1
 
 
 def main() -> None:
@@ -54,53 +44,35 @@ def main() -> None:
         print("[Routine C] 이미 발행됨 — 종료")
         return
 
-    # 상태 업데이트: PUBLISHING
+    # 상태: PUBLISHING
     gh.write_json(f"{weekly_path}/status.json", {
         **status,
         "status": "PUBLISHING",
         "timeline": {**status.get("timeline", {}), "publishing_started": _now()},
-    })
+    }, "auto: 발행 시작")
 
-    # 2. 최종 콘텐츠 읽기 (승인 후 수정 반영)
-    candidates = gh.read_json(f"{weekly_path}/selected-articles.json") \
-              or gh.read_json(f"{weekly_path}/news-candidates.json") or {}
-
-    tech_report = gh.read_text(f"{weekly_path}/draft-tech-report.md") or ""
-    nontech_report = gh.read_text(f"{weekly_path}/draft-nontech-report.md") or ""
-    newsletter_html = gh.read_text(f"{weekly_path}/draft-newsletter.html") or ""
-
-    # 3. 최종 웹진 HTML 빌드
-    print("[Routine C] 웹진 HTML 빌드 중...")
-    webzine_html = webzine_builder.build_webzine(
-        week_id=week_id,
-        candidates=candidates,
-        tech_report=tech_report,
-        nontech_report=nontech_report,
-    )
-
-    # 4. GitHub 저장소에 웹진 파일 저장 → GitHub Pages 자동 배포
-    issue_path = f"site/issues/{week_id}/index.html"
-    print(f"[Routine C] GitHub 저장소에 {issue_path} 저장 중...")
+    # 2. 웹진 빌드 + GitHub 커밋 (→ GitHub Pages 자동 배포)
+    print("[Routine C] 웹진 빌드 중...")
     try:
-        gh.write_html(
-            issue_path,
-            webzine_html,
-            message=f"publish: {week_id} 웹진 제{_get_issue_number(week_id)}호",
-        )
-        print("[Routine C] 웹진 저장 완료 → GitHub Pages 자동 배포 시작")
+        webzine_builder.build(week_id)
+        print("[Routine C] 웹진 빌드 완료 → GitHub Pages 배포 시작됨")
     except Exception as exc:
-        print(f"[Routine C] 웹진 저장 실패: {exc} — 뉴스레터 발송 중단")
+        print(f"[Routine C] 웹진 빌드 실패: {exc} — 뉴스레터 발송 중단")
         gh.write_json(f"{weekly_path}/status.json", {
             **status,
             "status": "PUBLISH_FAILED",
             "error": str(exc),
-        })
+            "timeline": {**status.get("timeline", {}), "failed": _now()},
+        }, "auto: 발행 실패")
         return
 
-    # archive 페이지 업데이트
-    _update_archive(gh, week_id)
+    # 3. 뉴스레터 HTML 준비 (저장된 초안 또는 빌더로 생성)
+    newsletter_html = gh.read_text(f"{weekly_path}/draft-newsletter.html") or ""
+    if not newsletter_html:
+        print("[Routine C] draft-newsletter.html 없음 → 뉴스레터 HTML 자동 생성")
+        newsletter_html = webzine_builder.build_newsletter_html(week_id)
 
-    # 5. 뉴스레터 발송
+    # 4. 수신자 목록 읽기
     recipients_data = gh.read_json("data/recipients.json") or {}
     active_recipients = [
         r["email"]
@@ -108,18 +80,20 @@ def main() -> None:
         if r.get("active", True)
     ]
 
-    issue_num = _get_issue_number(week_id)
-    date_str = datetime.now(timezone.utc).strftime("%Y년 %m월")
-    week_num = week_id.split("-W")[1]
-    subject = f"[AI 웹진 제{issue_num}호] 이번 주 AI 동향 — {date_str} {week_num}주"
+    # 5. 뉴스레터 발송
+    now = datetime.now(timezone.utc)
+    year, wnum = week_id.split("-W")
+    week_label = f"{year}년 제{int(wnum)}호"
+    date_str = now.strftime("%Y년 %m월")
+    subject = f"[AI 웹진 {week_label}] 이번 주 AI 동향 — {date_str}"
 
     result = {"sent": [], "failed": []}
     if active_recipients and newsletter_html:
-        print(f"[Routine C] 뉴스레터 {len(active_recipients)}명에게 발송 중...")
+        print(f"[Routine C] 뉴스레터 {len(active_recipients)}명 발송 중...")
         result = send_newsletter(active_recipients, subject, newsletter_html)
         print(f"[Routine C] 발송 완료: 성공 {len(result['sent'])}명, 실패 {len(result['failed'])}명")
     else:
-        print("[Routine C] 수신자 없거나 뉴스레터 HTML 없음 — 발송 건너뜀")
+        print("[Routine C] 수신자 없거나 뉴스레터 없음 — 발송 건너뜀")
 
     # 6. 상태 PUBLISHED
     gh.write_json(f"{weekly_path}/status.json", {
@@ -132,48 +106,27 @@ def main() -> None:
         },
         "newsletter_sent": len(result["sent"]),
         "newsletter_failed": len(result["failed"]),
-    })
+    }, "auto: 발행 완료")
 
-    # 7. 관리자 발행 완료 알림
-    admin_email = os.environ.get("ADMIN_EMAIL")
+    # 7. 관리자 알림
+    admin_email = os.environ.get("ADMIN_EMAIL", "")
     if admin_email:
         repo = os.environ.get("GITHUB_REPO", "")
-        pages_url = f"https://{repo.split('/')[0]}.github.io/{repo.split('/')[1]}/issues/{week_id}/" if repo else ""
+        owner = repo.split("/")[0] if "/" in repo else ""
+        repo_name = repo.split("/")[1] if "/" in repo else repo
+        pages_url = f"https://{owner}.github.io/{repo_name}/issues/{week_id}/"
         send_admin_notification(
             to=admin_email,
-            subject=f"[AI 웹진] 제{issue_num}호 발행 완료",
+            subject=f"[AI 웹진] {week_label} 발행 완료",
             body=(
-                f"제{issue_num}호({week_id}) 발행이 완료되었습니다.\n\n"
+                f"{week_label}({week_id}) 발행이 완료되었습니다.\n\n"
                 f"웹진 URL: {pages_url}\n"
-                f"뉴스레터 발송: {len(result['sent'])}명 성공"
+                f"뉴스레터: {len(result['sent'])}명 발송 성공"
                 + (f", {len(result['failed'])}명 실패" if result["failed"] else "")
             ),
         )
 
-    print(f"[Routine C] 발행 완료: {week_id}")
-
-
-def _update_archive(gh: GitHubHelper, new_week_id: str) -> None:
-    """archive/index.html에 새로 발행된 호를 추가한다."""
-    try:
-        html = gh.read_text("site/archive/index.html") or ""
-        issue_num = _get_issue_number(new_week_id)
-        pub_date = datetime.now(timezone.utc).strftime("%Y년 %m월 %d일")
-        new_item = (
-            f'<a href="../issues/{new_week_id}/" class="article-card" style="text-decoration:none">'
-            f'<span class="topic-tag" style="background:#1A56DB">제{issue_num}호</span>'
-            f'<h3 class="article-title">{new_week_id}</h3>'
-            f'<p class="article-summary">발행일: {pub_date}</p>'
-            f'</a>'
-        )
-        placeholder = '<p style="color:#64748B">아직 발행된 호가 없습니다.</p>'
-        if placeholder in html:
-            html = html.replace(placeholder, new_item)
-        else:
-            html = html.replace('<div id="archive-list"', f'<div id="archive-list">\n        {new_item}', 1)
-        gh.write_html("site/archive/index.html", html, message=f"archive: {new_week_id} 추가")
-    except Exception as exc:
-        print(f"[Routine C] archive 업데이트 실패 (무시): {exc}")
+    print(f"[Routine C] 완료: {week_id}")
 
 
 def _now() -> str:
