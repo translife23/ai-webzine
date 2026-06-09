@@ -1,4 +1,13 @@
 {
   "version": 1,
-  "recipients": []
+  "recipients": [
+    {
+      "id": "r001",
+      "name": "김태완",
+      "email": "translife23@itqi.kr",
+      "department": "itqi",
+      "active": true,
+      "subscribed_at": "2026-06-09T06:43:35.210241+00:00"
+    }
+  ]
 }
