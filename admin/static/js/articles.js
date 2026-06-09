@@ -17,9 +17,9 @@ async function loadArticles() {
       const color = TOPIC_COLORS[a.topic_tag] || "#64748B";
       return `<div class="article-card${isSpare ? " spare" : ""}" data-url="${escHtml(a.url)}">
         <span class="topic-badge" style="background:${color}">${escHtml(a.topic_tag)}</span>
-        <div class="article-title-text">${escHtml(a.title)}</div>
+        <div class="article-title-text">${escHtml(a.title_ko || a.title)}</div>
         <div class="article-meta-text">${escHtml(a.source)} · ${escHtml(a.published_date)}</div>
-        <div class="article-meta-text text-muted" style="margin-top:6px;font-size:12px">${escHtml((a.summary||"").slice(0,80))}...</div>
+        <div class="article-meta-text text-muted" style="margin-top:6px;font-size:12px">${escHtml(((a.summary_ko || a.summary)||"").slice(0,80))}...</div>
         <a href="${escHtml(a.url)}" target="_blank" style="font-size:12px;color:#1A56DB;display:block;margin-top:6px">원문 보기 →</a>
       </div>`;
     };
