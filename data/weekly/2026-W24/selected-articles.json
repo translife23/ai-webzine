@@ -1,0 +1,139 @@
+{
+  "week": "2026-W24",
+  "selected_at": "2026-06-09T15:03:09.855353+00:00",
+  "selected_by": "admin4web",
+  "articles": [
+    {
+      "topic": "화폐금융",
+      "origin": "해외",
+      "title": "How AI Is Forcing Central Banks to Rethink Inflation and Rates",
+      "title_ko": "AI가 중앙은행들의 인플레이션 및 금리 재고를 강요하는 방법",
+      "url": "https://finance.yahoo.com/economy/policy/articles/ai-forcing-central-banks-rethink-050032459.html",
+      "source": "Yahoo Finance",
+      "published_date": "2026-05-20",
+      "summary": "Policymakers now frame AI as a structural shift on the scale of electrification, one that will reshape inflation, interest rates and the tools central banks use.",
+      "summary_ko": "정책 입안자들은 AI를 전기화 수준의 구조적 전환으로 규정하며, 인플레이션·금리·중앙은행 정책 도구를 근본적으로 재편할 것으로 보고 있다. 단기 인플레이션 요인이 될 수 있지만 장기적으로는 디스인플레이션을 유발할 수 있다는 논쟁이 이어지고 있다."
+    },
+    {
+      "topic": "금융투자",
+      "origin": "해외",
+      "title": "2026 Global AI in Financial Services Report – Adoption, Impact and Risks",
+      "title_ko": "2026 글로벌 금융 서비스 AI 현황 보고서 – 도입, 영향 및 리스크",
+      "url": "https://www.jbs.cam.ac.uk/faculty-research/centres/alternative-finance/publications/2026-global-ai-in-financial-services-report/",
+      "source": "Cambridge Judge Business School (CCAF)",
+      "published_date": "2026-04-15",
+      "summary": "85% of financial institutions have implemented AI in at least one business function. Venture capital investment into generative AI-native financial infrastructure reached $150 billion in the 2025–2026 cycle.",
+      "summary_ko": "금융기관의 85%가 최소 1개 이상의 업무에 AI를 도입했다. AI 네이티브 금융 인프라에 대한 벤처 투자는 2025~2026년 사이클에서 1,500억 달러에 달했으며, 에이전틱 AI가 핵심 신규 활용 사례로 주목받고 있다."
+    },
+    {
+      "topic": "로봇",
+      "origin": "해외",
+      "title": "Humanoid Robots Touted as Next AI Investment Opportunity",
+      "title_ko": "휴머노이드 로봇, 차세대 AI 투자 기회로 주목받다",
+      "url": "https://www.cnbc.com/2026/06/03/humanoid-robots-trillion-dollar-ai-market.html",
+      "source": "CNBC",
+      "published_date": "2026-06-03",
+      "summary": "SoftBank CEO Masayoshi Son declared humanoid robots the next trillion-dollar AI opportunity. BMW's 11-month deployment of Figure AI robots contributed to producing 30,000+ vehicles.",
+      "summary_ko": "소프트뱅크 손 마사요시 CEO는 휴머노이드 로봇에서 다음 조 단위 AI 투자 기회가 탄생할 것이라고 선언했다. BMW는 11개월간 Figure AI 로봇을 운용해 차량 3만 대 이상 생산에 기여했으며, 일본항공은 하네다 공항에 3년 계약으로 휴머노이드 로봇을 도입했다."
+    },
+    {
+      "topic": "로봇",
+      "origin": "국내",
+      "title": "\"조선소에 번지는 로봇 혁명…AI 용접로봇 이어 휴머노이드 온다\"",
+      "title_ko": "\"조선소에 번지는 로봇 혁명…AI 용접로봇 이어 휴머노이드 온다\"",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=46766",
+      "source": "로봇신문",
+      "published_date": "2026-06-04",
+      "summary": "한국 조선소에서 AI 기반 용접로봇과 협동로봇이 핵심 공정에 빠르게 투입되고 있으며, 에이로봇이 HD현대중공업과 협력해 화재 감시·위험지역 점검용 산업용 휴머노이드를 개발 중이다.",
+      "summary_ko": "한국 조선소에서 AI 기반 용접로봇과 협동로봇이 핵심 공정에 빠르게 투입되고 있으며, 에이로봇이 HD현대중공업과 협력해 화재 감시·위험지역 점검용 산업용 휴머노이드를 개발 중이다. 2027년 현장 투입을 목표로 실증 사업이 진행되고 있다."
+    },
+    {
+      "topic": "에너지",
+      "origin": "해외",
+      "title": "There Are Fixes for AI's Toll on the Power Grid. Here's Why They're Not Happening",
+      "title_ko": "AI가 전력망에 가하는 부담, 해결책은 있다. 그런데 왜 실행되지 않는가",
+      "url": "https://www.cnn.com/2026/04/23/business/ai-compute-power-electricity-grid",
+      "source": "CNN Business",
+      "published_date": "2026-04-23",
+      "summary": "AI data centers could consume up to 9% of total U.S. electricity by 2030, adding 150+ terawatt-hours of demand. A 'shadow grid' of 46 data centers with 56 GW combined dedicated capacity is emerging.",
+      "summary_ko": "AI 데이터센터가 2030년까지 미국 전체 전력의 9%를 소비할 수 있으며, 150테라와트시 이상의 수요가 추가될 전망이다. 56GW 규모 46개 데이터센터가 공공 전력망을 우회해 '그림자 전력망'을 구축하는 현상이 나타나고 있다."
+    },
+    {
+      "topic": "방산",
+      "origin": "해외",
+      "title": "Pentagon Strikes AI Deals for Classified Military Use",
+      "title_ko": "펜타곤, AI 기업들과 기밀 군사용 AI 배치 계약 체결",
+      "url": "https://www.washingtonpost.com/technology/2026/05/01/pentagon-ai-deals-microsoft-amazon-google-classified-military/",
+      "source": "The Washington Post",
+      "published_date": "2026-05-01",
+      "summary": "Eight AI companies, including Microsoft, Amazon, and Google, reached deals to deploy their technology in classified Pentagon networks.",
+      "summary_ko": "마이크로소프트, 아마존, 구글 등 8개 AI 기업이 미 국방부 기밀 네트워크에 AI 기술을 배치하는 계약을 체결했다. 국방부는 이를 AI 우선 전투력 전환을 가속화하는 조치로 규정했다."
+    },
+    {
+      "topic": "헬스케어·바이오",
+      "origin": "해외",
+      "title": "From Radiology to Drug Discovery, Survey Reveals AI Is Delivering Clear Return on Investment in Healthcare",
+      "title_ko": "방사선과부터 신약 개발까지, AI가 헬스케어 전반에서 명확한 투자 수익 창출",
+      "url": "https://blogs.nvidia.com/blog/ai-in-healthcare-survey-2026/",
+      "source": "NVIDIA Blog",
+      "published_date": "2026-04-10",
+      "summary": "NVIDIA's healthcare AI survey reveals measurable ROI across clinical functions. 46% of pharma and biotech respondents cited drug discovery AI as a top ROI use case.",
+      "summary_ko": "NVIDIA의 헬스케어 AI 설문 조사 결과, AI가 임상 기능 전반에서 측정 가능한 ROI를 창출하고 있다. 제약·바이오 응답자의 46%가 신약 개발 AI를 최우선 ROI 사례로 꼽았으며, 80%는 AI 예산을 증액할 계획이다."
+    },
+    {
+      "topic": "반도체·HW인프라",
+      "origin": "해외",
+      "title": "Gartner Forecasts Worldwide Semiconductor Revenue to Exceed $1.3 Trillion in 2026",
+      "title_ko": "가트너, 2026년 전 세계 반도체 매출 1.3조 달러 초과 전망",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-04-08-gartner-forecasts-worldwide-semiconductor-revenue-to-exceed-us-dollars-one-point-3-trillion-in-2026",
+      "source": "Gartner",
+      "published_date": "2026-04-08",
+      "summary": "Gartner forecasts worldwide semiconductor revenue to reach $1.29 trillion in 2026, up 52.8% YoY, driven by AI infrastructure demand. DRAM revenues alone are projected to triple to $418.6 billion.",
+      "summary_ko": "가트너는 2026년 전 세계 반도체 매출이 전년 대비 52.8% 증가한 1조 2,900억 달러에 달할 것으로 전망했다. D램 매출은 HBM 수요에 힘입어 4,186억 달러로 세 배 가까이 증가할 전망이다."
+    },
+    {
+      "topic": "농업·푸드테크",
+      "origin": "해외",
+      "title": "Top 10 Agriculture Trends in 2026: AI Adoption Hits 60%",
+      "title_ko": "2026년 농업 10대 트렌드: AI 도입률 60% 돌파",
+      "url": "https://www.startus-insights.com/innovators-guide/agriculture-trends/",
+      "source": "StartUs Insights",
+      "published_date": "2026-03-01",
+      "summary": "AI adoption has reached 60% of large farms globally, reshaping food systems. Drone-based crop monitoring combined with predictive analytics cuts monitoring costs by up to 85%.",
+      "summary_ko": "AI 도입률이 전 세계 대형 농장의 60%에 도달해 식품 시스템을 재편하고 있다. 드론과 예측 분석을 결합하면 작물 모니터링 비용이 최대 85% 절감되고 농약 사용량이 50% 감소한다."
+    },
+    {
+      "topic": "제조·스마트팩토리",
+      "origin": "국내",
+      "title": "[스페셜리포트] AI가 제어하는 공장 현실로… 2026년 자율제조 시대 개막",
+      "title_ko": "[스페셜리포트] AI가 제어하는 공장 현실로… 2026년 자율제조 시대 개막",
+      "url": "https://www.industrynews.co.kr/news/articleView.html?idxno=77059",
+      "source": "인더스트리뉴스",
+      "published_date": "2026-03-10",
+      "summary": "AI 팩토리가 데이터 수집·분석·학습·의사결정을 자율적으로 수행하는 '자율제조' 시대의 시작을 알리고 있다.",
+      "summary_ko": "AI 팩토리가 데이터 수집·분석·학습·의사결정을 자율적으로 수행하는 '자율제조' 시대의 시작을 알리고 있다. 산업통상자원부는 'AI 팩토리 전문기업' 선정 제도를 가동하고, 800억원 규모 제조AI 특화 스마트공장 사업(400개 과제)을 지원 중이다."
+    },
+    {
+      "topic": "AI거버넌스·규제",
+      "origin": "해외",
+      "title": "AI Act Update: EU Resolves to Change Rules and Extend Deadlines",
+      "title_ko": "EU AI법 개정: EU, 규칙 간소화 및 적용 시한 연장 결정",
+      "url": "https://www.lw.com/en/insights/ai-act-update-eu-resolves-to-change-rules-and-extend-deadlines",
+      "source": "Latham & Watkins",
+      "published_date": "2026-05-07",
+      "summary": "The EU reached a political agreement on May 7, 2026 to amend the AI Act through the 'Omnibus VII' package. Full applicability begins August 2, 2026.",
+      "summary_ko": "EU는 2026년 5월 7일 'Omnibus VII' 패키지를 통해 EU AI법 개정에 정치적 합의를 이뤘다. 중소기업 기준 완화(직원 750명·연매출 1.5억 유로), 2026년 8월 2일 전면 적용 등이 주요 변경 사항이다."
+    },
+    {
+      "topic": "항공우주·SAF",
+      "origin": "국내",
+      "title": "대한항공, '국산 지속가능항공유(SAF)'로 하늘 난다",
+      "title_ko": "대한항공, '국산 지속가능항공유(SAF)'로 하늘 난다",
+      "url": "https://news.koreanair.com/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5-%EA%B5%AD%EC%82%B0-%EC%A7%80%EC%86%8D%EA%B0%80%EB%8A%A5%ED%95%AD%EA%B3%B5%EC%9C%A0saf%EB%A1%9C-%ED%95%98%EB%8A%98-%EB%82%9C%EB%8B%A4/",
+      "source": "대한항공 뉴스룸",
+      "published_date": "2026-05-15",
+      "summary": "대한항공이 국적 항공사 최초로 국내 생산 SAF를 일반 항공유와 혼합해 운항에 나선다. 2027년부터 국제선 항공편에 친환경 연료 혼합이 의무화될 예정이다.",
+      "summary_ko": "대한항공이 국적 항공사 최초로 국내 생산 SAF를 일반 항공유와 혼합해 운항에 나선다. 2027년부터 국제선 항공편에 친환경 연료 혼합이 의무화될 예정으로, 국내 SAF 시장 선점을 위한 움직임이 본격화되고 있다."
+    }
+  ]
+}
