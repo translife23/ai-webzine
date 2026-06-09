@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / "scripts"))
 from github_helper import GitHubHelper
-from auth import _get_current_user
+from routers.auth import _get_current_user
 
 router = APIRouter()
 
