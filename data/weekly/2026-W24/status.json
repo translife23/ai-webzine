@@ -1,9 +1,10 @@
 {
   "week": "2026-W24",
-  "status": "ARTICLES_CONFIRMED",
+  "status": "THEME_PLAN_READY",
   "timeline": {
     "news_search_started": "2026-06-09T08:11:58.883294+00:00",
-    "news_search_completed": "2026-06-09T08:11:58.883294+00:00"
+    "news_search_completed": "2026-06-09T08:11:58.883294+00:00",
+    "theme_plan_submitted": "2026-06-09T09:04:21.383451+00:00"
   },
   "topics_covered": [
     "항공우주·SAF",
