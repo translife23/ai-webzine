@@ -1,0 +1,24 @@
+name: Routine C API 트리거 수신
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: '발행 주차 (예: 2026-W24)'
+        required: true
+        type: string
+      triggered_by:
+        description: '트리거 출처'
+        required: false
+        default: 'admin-approval'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 트리거 수신 확인
+        run: |
+          echo "Routine C 트리거 수신됨"
+          echo "주차: ${{ inputs.week }}"
+          echo "출처: ${{ inputs.triggered_by }}"
+          echo "이 워크플로는 Routine C가 API 트리거를 통해 발행 파이프라인을 시작했음을 기록합니다."

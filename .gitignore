@@ -1,0 +1,41 @@
+# 환경 변수 (절대 커밋 금지)
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+
+# 로그
+logs/
+*.log
+
+# 임시 파일
+*.tmp
+*.bak
+~$*
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# 운영체제
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Gmail OAuth 토큰 (환경 변수로 관리)
+token.json
+credentials.json
