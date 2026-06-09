@@ -1,6 +1,6 @@
 {
   "week": "2026-W24",
-  "status": "PUBLISHING",
+  "status": "PUBLISHED",
   "timeline": {
     "news_search_started": "2026-06-09T08:11:58.883294+00:00",
     "news_search_completed": "2026-06-09T08:11:58.883294+00:00",
@@ -8,8 +8,8 @@
     "draft_ready": "2026-06-09T09:15:52.076385+00:00",
     "approved": "2026-06-09T15:03:11.919614+00:00",
     "failed": "2026-06-09T15:03:45.665967+00:00",
-    "publishing_started": "2026-06-09T21:58:36.403039+00:00",
-    "published": "2026-06-09T21:51:06.200692+00:00"
+    "publishing_started": "2026-06-09T15:07:39.093965+00:00",
+    "published": "2026-06-09T22:00:57.501541+00:00"
   },
   "topics_covered": [
     "항공우주·SAF",
@@ -28,5 +28,7 @@
   "articles_count": 22,
   "confirmed_at": "2026-06-09T00:00:00Z",
   "draft_report": "data/weekly/2026-W24/draft-report.md",
-  "research_searches": 26
+  "research_searches": 26,
+  "newsletter_sent": 0,
+  "newsletter_failed": 1
 }
