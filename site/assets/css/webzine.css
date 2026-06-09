@@ -1,0 +1,197 @@
+/* AI 웹진 — 메인 스타일시트
+ * 참고: https://webzine.nrf.re.kr/magazine/2503/index.php
+ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --color-primary:      #1A56DB;
+  --color-primary-dark: #1239A6;
+  --color-accent:       #0EA5E9;
+  --color-bg:           #F8FAFC;
+  --color-surface:      #FFFFFF;
+  --color-text:         #1E293B;
+  --color-text-muted:   #64748B;
+  --color-border:       #E2E8F0;
+  --radius-card:        12px;
+  --shadow-card:        0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.04);
+  --shadow-hover:       0 4px 16px rgba(0,0,0,.12);
+}
+
+body {
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── 헤더 ─────────────────────────────────── */
+.site-header {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  padding: 24px 0;
+  color: #fff;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-text {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.logo-subtitle {
+  display: block;
+  font-size: 13px;
+  color: #93C5FD;
+  margin-top: 2px;
+}
+.issue-badge {
+  background: rgba(255,255,255,.2);
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.pub-date {
+  font-size: 14px;
+  color: #BFDBFE;
+  margin-left: 12px;
+}
+
+/* ─── 섹션 공통 ────────────────────────────── */
+main { padding: 40px 0 64px; }
+section + section { margin-top: 48px; }
+.section-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+/* ─── 기획 보고서 카드 ──────────────────────── */
+.report-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+}
+.report-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+}
+details summary {
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--color-primary);
+  font-weight: 600;
+  user-select: none;
+  padding: 8px 0;
+}
+details[open] summary { margin-bottom: 16px; }
+.report-body {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+.report-body h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 24px 0 8px;
+  color: var(--color-primary-dark);
+  border-left: 4px solid var(--color-primary);
+  padding-left: 12px;
+}
+.report-body h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0 6px;
+}
+.report-body p { margin-bottom: 10px; }
+.report-body li { margin-left: 20px; margin-bottom: 4px; }
+
+/* ─── 뉴스 카드 그리드 ─────────────────────── */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px) { .articles-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .articles-grid { grid-template-columns: 1fr; } }
+
+.article-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow .2s, transform .2s;
+  display: flex;
+  flex-direction: column;
+}
+.article-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+.topic-tag {
+  display: inline-block;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+.article-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  flex: 1;
+}
+.article-title a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+.article-title a:hover { color: var(--color-primary); }
+.article-summary {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 12px;
+  flex: 1;
+}
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #94A3B8;
+  border-top: 1px solid var(--color-border);
+  padding-top: 10px;
+  margin-top: auto;
+}
+
+/* ─── 푸터 ─────────────────────────────────── */
+.site-footer {
+  background: #1E293B;
+  color: #94A3B8;
+  text-align: center;
+  padding: 32px 0;
+  font-size: 13px;
+}
+.site-footer a { color: #60A5FA; text-decoration: none; }
+.site-footer p + p { margin-top: 8px; }
