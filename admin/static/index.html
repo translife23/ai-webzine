@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 웹진 관리자</title>
+  <link rel="stylesheet" href="/static/css/admin.css">
+</head>
+<body>
+  <div id="app">
+    <!-- 로그인 화면 -->
+    <div id="login-screen" class="login-screen">
+      <div class="login-card">
+        <h1 class="login-title">AI 웹진<br>관리자</h1>
+        <form id="login-form">
+          <div class="form-group">
+            <label>아이디</label>
+            <input type="text" id="username" value="admin4web" autocomplete="username">
+          </div>
+          <div class="form-group">
+            <label>비밀번호</label>
+            <input type="password" id="password" autocomplete="current-password">
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">로그인</button>
+          <p id="login-error" class="error-msg hidden"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- 메인 앱 (로그인 후) -->
+    <div id="main-app" class="hidden">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <span class="sidebar-logo">AI 웹진</span>
+          <span class="sidebar-sub">관리자</span>
+        </div>
+        <nav class="sidebar-nav">
+          <a class="nav-item active" data-tab="workflow" href="#">워크플로 현황</a>
+          <a class="nav-item" data-tab="articles" href="#">기사 검토</a>
+          <a class="nav-item" data-tab="topics" href="#">기획 주제</a>
+          <a class="nav-item" data-tab="draft" href="#">초안 검토</a>
+          <a class="nav-item" data-tab="recipients" href="#">수신자 관리</a>
+          <a class="nav-item" data-tab="members" href="#">멤버 관리</a>
+          <a class="nav-item" data-tab="account" href="#">내 계정</a>
+        </nav>
+        <button id="logout-btn" class="btn btn-outline btn-sm sidebar-logout">로그아웃</button>
+      </aside>
+
+      <main class="main-content">
+        <div id="tab-workflow"  class="tab-panel active"></div>
+        <div id="tab-articles"  class="tab-panel hidden"></div>
+        <div id="tab-topics"    class="tab-panel hidden"></div>
+        <div id="tab-draft"     class="tab-panel hidden"></div>
+        <div id="tab-recipients"class="tab-panel hidden"></div>
+        <div id="tab-members"   class="tab-panel hidden"></div>
+        <div id="tab-account"   class="tab-panel hidden"></div>
+      </main>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/workflow.js"></script>
+  <script src="/static/js/articles.js"></script>
+  <script src="/static/js/topics.js"></script>
+  <script src="/static/js/draft.js"></script>
+  <script src="/static/js/recipients.js"></script>
+  <script src="/static/js/members.js"></script>
+  <script src="/static/js/account.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
