@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: ai-webzine-admin
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd admin && uvicorn server:app --host 0.0.0.0 --port $PORT
+    plan: free
+    region: singapore
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: GMAIL_CLIENT_ID
+        sync: false
+      - key: GMAIL_CLIENT_SECRET
+        sync: false
+      - key: GMAIL_REFRESH_TOKEN
+        sync: false
+      - key: GMAIL_SENDER_ADDRESS
+        sync: false
+      - key: ROUTINE_C_ENDPOINT
+        sync: false
+      - key: ROUTINE_C_BEARER_TOKEN
+        sync: false
+      - key: ADMIN_SECRET_KEY
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GITHUB_REPO
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
