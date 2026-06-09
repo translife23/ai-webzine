@@ -98,10 +98,17 @@ def build(week_id: str | None = None) -> str:
 
     weekly_path = f"data/weekly/{week_id}"
 
-    articles_data = gh.read_json(f"{weekly_path}/selected-articles.json") or {}
+    articles_data = (
+        gh.read_json(f"{weekly_path}/selected-articles.json")
+        or gh.read_json(f"{weekly_path}/news-candidates.json")
+        or {}
+    )
     report_md = gh.read_text(f"{weekly_path}/draft-report.md") or ""
 
     articles: list[dict] = articles_data.get("articles", [])
+    for a in articles:
+        if "topic" not in a and "topic_tag" in a:
+            a["topic"] = a["topic_tag"]
     if not articles:
         raise ValueError(f"선정된 기사가 없습니다: {weekly_path}/selected-articles.json")
     if not report_md:
@@ -145,10 +152,17 @@ def build_newsletter_html(week_id: str) -> str:
     gh = GitHubHelper()
     weekly_path = f"data/weekly/{week_id}"
 
-    articles_data = gh.read_json(f"{weekly_path}/selected-articles.json") or {}
+    articles_data = (
+        gh.read_json(f"{weekly_path}/selected-articles.json")
+        or gh.read_json(f"{weekly_path}/news-candidates.json")
+        or {}
+    )
     report_md = gh.read_text(f"{weekly_path}/draft-report.md") or ""
 
     articles: list[dict] = articles_data.get("articles", [])
+    for a in articles:
+        if "topic" not in a and "topic_tag" in a:
+            a["topic"] = a["topic_tag"]
     report_title = extract_title(report_md)
     report_summary = extract_summary(report_md, 150)
 
