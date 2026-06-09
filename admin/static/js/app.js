@@ -66,9 +66,11 @@ function showMainApp(me) {
 }
 
 function switchTab(name) {
-  document.querySelectorAll(".tab-panel").forEach((p) => p.classList.add("hidden"));
+  document.querySelectorAll(".tab-panel").forEach((p) => { p.classList.add("hidden"); p.classList.remove("active"); });
   document.querySelectorAll(".nav-item").forEach((n) => n.classList.remove("active"));
-  document.getElementById("tab-" + name).classList.remove("hidden");
+  const panel = document.getElementById("tab-" + name);
+  panel.classList.remove("hidden");
+  panel.classList.add("active");
   document.querySelector(`[data-tab="${name}"]`).classList.add("active");
 
   const loaders = {
