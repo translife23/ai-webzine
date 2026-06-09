@@ -89,10 +89,8 @@ def get_draft(session_id: str | None = Cookie(default=None)):
     gh = _gh()
     return {
         "week": week,
-        "tech_report": gh.read_text(f"data/weekly/{week}/draft-tech-report.md"),
-        "nontech_report": gh.read_text(f"data/weekly/{week}/draft-nontech-report.md"),
+        "report": gh.read_text(f"data/weekly/{week}/draft-report.md"),
         "newsletter_html": gh.read_text(f"data/weekly/{week}/draft-newsletter.html"),
-        "webzine_html": gh.read_text(f"data/weekly/{week}/draft-webzine.html"),
     }
 
 
@@ -102,10 +100,8 @@ def update_draft(body: dict, session_id: str | None = Cookie(default=None)):
     user = _get_current_user(session_id)
     week = _week_id()
     gh = _gh()
-    if "tech_report" in body:
-        gh.write_text(f"data/weekly/{week}/draft-tech-report.md", body["tech_report"], "admin: 기술 보고서 수정")
-    if "nontech_report" in body:
-        gh.write_text(f"data/weekly/{week}/draft-nontech-report.md", body["nontech_report"], "admin: 비기술 보고서 수정")
+    if "report" in body:
+        gh.write_text(f"data/weekly/{week}/draft-report.md", body["report"], "admin: 보고서 수정")
     if "newsletter_html" in body:
         gh.write_text(f"data/weekly/{week}/draft-newsletter.html", body["newsletter_html"], "admin: 뉴스레터 수정")
     return {"message": "초안이 업데이트되었습니다."}
