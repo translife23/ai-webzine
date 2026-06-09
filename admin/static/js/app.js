@@ -47,10 +47,20 @@ function showMainApp(me) {
   document.getElementById("login-screen").classList.add("hidden");
   document.getElementById("main-app").classList.remove("hidden");
 
+  // 햄버거 메뉴 토글
+  const sidebar = document.querySelector(".sidebar");
+  const overlay = document.getElementById("sidebar-overlay");
+  const hamburger = document.getElementById("hamburger-btn");
+  const openSidebar  = () => { sidebar.classList.add("open"); overlay.classList.add("open"); };
+  const closeSidebar = () => { sidebar.classList.remove("open"); overlay.classList.remove("open"); };
+  if (hamburger) hamburger.addEventListener("click", openSidebar);
+  if (overlay)   overlay.addEventListener("click", closeSidebar);
+
   // 탭 라우팅
   document.querySelectorAll(".nav-item").forEach((el) => {
     el.addEventListener("click", (e) => {
       e.preventDefault();
+      closeSidebar();
       switchTab(el.dataset.tab);
     });
   });
