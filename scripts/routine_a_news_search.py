@@ -1,10 +1,11 @@
 """
 Routine A 진입점 — 매주 토요일 17:00 실행
 
-1. 11개 토픽 영역 뉴스 검색 (Tavily)
-2. 12개 기사 선정 + 여분 3개 (Claude haiku 점수화)
+1. 11개 토픽 영역 뉴스 검색 (RSS 피드, API 키 불필요)
+2. 12개 기사 선정 + 여분 3개 (휴리스틱 점수화)
 3. data/weekly/YYYY-WNN/ 디렉토리에 결과 저장 (GitHub API)
-4. 관리자에게 이메일 알림
+4. Claude Code 세션이 제목·요약 한글 번역 후 JSON 업데이트
+5. 관리자에게 이메일 알림
 """
 
 import json
@@ -59,7 +60,7 @@ def main() -> None:
     print(f"[Routine A] 총 {total}건 수집 완료")
 
     # 2. 기사 선정
-    print("[Routine A] 기사 선정 중 (Claude 점수화)...")
+    print("[Routine A] 기사 선정 중 (휴리스틱 점수화)...")
     selected, spare = article_curator.curate(all_articles, select_count=12, spare_count=3)
     print(f"[Routine A] 선정 {len(selected)}건 + 여분 {len(spare)}건")
 

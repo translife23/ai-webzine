@@ -3,8 +3,8 @@
 # Claude API
 anthropic>=0.30.0
 
-# 뉴스 검색
-tavily-python>=0.3.0
+# 뉴스 검색 (RSS)
+feedparser>=6.0.11
 
 # 관리자 서버 (FastAPI)
 fastapi>=0.111.0
