@@ -1,0 +1,186 @@
+{
+  "week": "2026-W24",
+  "generated_at": "2026-06-09T08:11:58.883294+00:00",
+  "topics_covered": [
+    "항공우주·SAF",
+    "화폐금융",
+    "로봇",
+    "제조·스마트팩토리",
+    "반도체·HW인프라",
+    "에너지",
+    "방산",
+    "헬스케어·바이오",
+    "농업·푸드테크",
+    "AI거버넌스·규제",
+    "금융투자"
+  ],
+  "selected": [
+    {
+      "title": "China Gives Up on State-Backed Digital Cash: The US and Europe Should Take Note—for Different Reasons",
+      "title_ko": "중국, 국가 주도 디지털 현금 포기… 미국·유럽이 서로 다른 교훈을 얻어야 하는 이유",
+      "url": "https://www.piie.com/blogs/realtime-economics/2026/china-gives-state-backed-digital-cash-us-and-europe-should-take-note",
+      "source": "PIIE",
+      "published_date": "2026-06-05",
+      "summary": "China has abandoned its e-CNY digital cash initiative while the ECB and other central banks continue pursuing CBDCs. Policy analysis examines what the US and Europe should each take away from China's retreat for different strategic reasons.",
+      "summary_ko": "중국이 e-CNY(디지털 위안화) 프로젝트를 사실상 폐기한 가운데, 유럽중앙은행(ECB)을 비롯한 주요 중앙은행들은 여전히 CBDC 개발을 이어가고 있다. 분석가들은 미국과 유럽이 중국의 사례에서 각기 다른 전략적 교훈을 얻어야 한다고 지적한다.",
+      "topic_tag": "화폐금융",
+      "relevance_score": 0.893
+    },
+    {
+      "title": "AI Isn't Replacing Credit Hedge Fund Traders Yet, Barclays Says",
+      "title_ko": "바클레이즈 조사: AI, 아직 헤지펀드 크레딧 트레이더 대체 못해",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-04/ai-isn-t-replacing-credit-hedge-fund-traders-yet-barclays-says",
+      "source": "Bloomberg",
+      "published_date": "2026-06-04",
+      "summary": "A Barclays survey finds that while AI has moved beyond the experimental phase in hedge funds, it is primarily used for research and securities screening—complementing rather than replacing human judgment in credit markets.",
+      "summary_ko": "바클레이즈가 실시한 업계 조사에 따르면, 헤지펀드에서 AI 활용이 실험 단계를 넘어섰지만 현재는 주로 리서치와 종목 스크리닝에 집중되어 있으며, 크레딧 시장에서 인간 트레이더를 대체하기보다는 보조하는 역할에 머물고 있다.",
+      "topic_tag": "금융투자",
+      "relevance_score": 0.881
+    },
+    {
+      "title": "Boston Dynamics Trains Atlas Humanoid Robot to Lift Heavy Appliances Using AI-Driven Whole-Body Control",
+      "title_ko": "보스턴 다이나믹스, AI 전신 제어로 세탁기 등 대형 가전 드는 아틀라스 로봇 훈련 공개",
+      "url": "https://roboticsandautomationnews.com/2026/05/20/boston-dynamics-trains-atlas-humanoid-robot-to-pick-up-and-place-washing-machine/101759/",
+      "source": "Robotics and Automation News",
+      "published_date": "2026-05-20",
+      "summary": "Boston Dynamics has demonstrated its Atlas humanoid robot picking up and placing heavy household appliances like washing machines using advanced AI-driven whole-body control techniques, a key step toward real industrial deployment.",
+      "summary_ko": "보스턴 다이나믹스가 AI 기반 전신(Whole-Body) 제어 기술을 적용해 아틀라스 휴머노이드 로봇이 세탁기와 같은 대형 가전 제품을 집어 들고 배치하는 데 성공했다. 이는 산업 현장에서의 실질적인 배치를 앞당길 핵심 역량으로 주목받고 있다.",
+      "topic_tag": "로봇",
+      "relevance_score": 0.876
+    },
+    {
+      "title": "AI and Data Center Demand Driving Nuclear Growth",
+      "title_ko": "AI·데이터센터 전력 수요 급증이 원전 르네상스를 견인하다",
+      "url": "https://science-technology.news-articles.net/content/2026/06/01/ai-and-data-center-demand-driving-nuclear-growth.html",
+      "source": "Science Technology News",
+      "published_date": "2026-06-01",
+      "summary": "U.S. data center electricity demand has surged from 23 GW in 2023 to 42 GW in 2026, with AI racks requiring 50–100 kW each. Nuclear power is emerging as the primary solution to the data center power crisis.",
+      "summary_ko": "미국 데이터센터의 전력 수요가 2023년 23GW에서 2026년 42GW로 급증한 가운데, AI 랙 하나당 필요 전력이 기존 5~10kW에서 50~100kW로 치솟고 있다. 안정적인 '상시 전력'을 공급할 수 있는 원자력이 핵심 해결책으로 급부상하고 있다.",
+      "topic_tag": "에너지",
+      "relevance_score": 0.872
+    },
+    {
+      "title": "The Pentagon's $54 Billion Bet on Autonomous Warfare",
+      "title_ko": "펜타곤의 540억 달러 자율 전쟁 베팅",
+      "url": "https://www.defenseone.com/ideas/2026/05/pentagons-54-billion-bet-autonomous-warfare/413735/",
+      "source": "Defense One",
+      "published_date": "2026-05-28",
+      "summary": "The Pentagon's Defense Autonomous Warfare Group is requesting a $50 billion FY27 budget—over 200 times its 2026 allocation—signaling a massive pivot to AI-driven autonomous weapons, with focus shifting from hardware to AI software deployable across cheap drone platforms.",
+      "summary_ko": "미 국방부 산하 국방자율전쟁그룹(DAWG)이 FY27 예산으로 500억 달러(2026년 예산의 200배 이상)를 요청하며 자율 무기 체계 구축에 대규모 투자를 예고했다. 전략 방향은 하드웨어에서 저가형 드론 플랫폼에 범용으로 탑재 가능한 AI 소프트웨어로 전환되고 있다.",
+      "topic_tag": "방산",
+      "relevance_score": 0.869
+    },
+    {
+      "title": "AI Drug Discovery Systems Could Strengthen Biopharmaceutical Innovation—If Policymakers Get the Incentives Right",
+      "title_ko": "AI 신약 발굴, 제약 혁신 강화 가능… 정책 인센티브 설계가 관건",
+      "url": "https://itif.org/publications/2026/06/02/ai-drug-discovery-systems-could-strengthen-biopharmaceutical-innovation/",
+      "source": "ITIF",
+      "published_date": "2026-06-02",
+      "summary": "ITIF analysis argues that AI-assisted drug discovery can reduce development timelines by 25–50%, but achieving this potential requires updated regulatory frameworks, revised IP protections, and proper government incentive structures.",
+      "summary_ko": "ITIF의 정책 분석에 따르면, AI 기반 신약 발굴 시스템은 개발 기간을 25~50% 단축할 잠재력을 갖고 있지만, 이를 실현하려면 규제 체계 개편, 지식재산권 보호 강화, 정부 인센티브 구조 정비가 선행되어야 한다.",
+      "topic_tag": "헬스케어·바이오",
+      "relevance_score": 0.861
+    },
+    {
+      "title": "Nvidia's New PC Chips Represent CEO Huang's Bid to Win at Every Layer of AI Stack",
+      "title_ko": "엔비디아 RTX 스파크 PC칩 공개… 젠슨 황, AI 스택 전 계층 장악 선언",
+      "url": "https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html",
+      "source": "CNBC",
+      "published_date": "2026-06-02",
+      "summary": "Nvidia unveiled the RTX Spark superchip at Computex on June 1, 2026, entering the PC market with an ARM-based chip on TSMC's 3nm process. The move sent shares of Intel, AMD, and Qualcomm lower as Nvidia positions itself across the entire AI computing stack.",
+      "summary_ko": "엔비디아가 2026년 6월 컴퓨텍스에서 RTX 스파크 수퍼칩을 공개하며 PC 시장에 진출했다. TSMC 3나노 공정 기반 ARM 설계로 마이크로소프트·델·HP·레노버 등의 노트북에 탑재될 예정이며, 이 발표로 인텔·AMD·퀄컴 주가가 동반 하락했다.",
+      "topic_tag": "반도체·HW인프라",
+      "relevance_score": 0.858
+    },
+    {
+      "title": "AI in Agriculture: New Food Innovations for 2026",
+      "title_ko": "2026 농업 AI: 정밀농업에서 자율 농기계까지 식품 혁신 가속",
+      "url": "https://farmonaut.com/precision-farming/ai-in-agriculture-new-food-innovations-for-2026",
+      "source": "Farmonaut",
+      "published_date": "2026-06-03",
+      "summary": "2026 marks the tipping point where AI becomes a strategic advantage in farming. Precision agriculture employing AI algorithms, satellite imagery, drones, and IoT sensors is now translating millions of data points into actionable, real-time insights for farmers.",
+      "summary_ko": "2026년은 농업에서 AI가 실험적 도구를 넘어 전략적 경쟁 우위로 자리잡는 변곡점이 되고 있다. AI 알고리즘과 위성 영상, 드론, IoT 센서를 결합한 정밀농업이 방대한 농업 데이터를 현장에서 즉시 활용 가능한 인사이트로 전환하고 있다.",
+      "topic_tag": "농업·푸드테크",
+      "relevance_score": 0.847
+    },
+    {
+      "title": "Smart Manufacturing Trends for 2026: AI, Digital Twins, and Real-Time Visibility",
+      "title_ko": "2026 스마트 제조 트렌드: AI·디지털 트윈·실시간 가시성의 융합",
+      "url": "https://news.yrules.com/en/archives/11199",
+      "source": "Supply Chain Intelligence",
+      "published_date": "2026-06-04",
+      "summary": "Smart manufacturing has reached the stage where factories can operate autonomously and self-heal using predictive maintenance. AI, digital twins, 5G, and IIoT are converging to create lights-out manufacturing environments.",
+      "summary_ko": "2026년 스마트 제조는 공장이 스스로 운영되고, 예측 정비로 자가 복구하는 단계에 이르렀다. AI와 디지털 트윈, 5G, 산업용 IoT가 융합되어 인간 개입 없이 가동되는 '무인 등화관제(Lights-Out)' 제조 환경이 현실화되고 있다.",
+      "topic_tag": "제조·스마트팩토리",
+      "relevance_score": 0.843
+    },
+    {
+      "title": "EU AI Act Update: Timeline Relief, Targeted Simplification, and New Prohibitions",
+      "title_ko": "EU AI법 개정: 시행 일정 완화·규정 간소화·신규 금지 조항 추가",
+      "url": "https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/",
+      "source": "Global Policy Watch",
+      "published_date": "2026-06-06",
+      "summary": "A provisional agreement on the EU Digital Omnibus on AI was reached on May 7, 2026, amending the AI Act for the first time since 2024. Key changes include new prohibitions on AI-generated non-consensual intimate content, extended implementation timelines, and draft guidelines for high-risk AI classification.",
+      "summary_ko": "2026년 5월 7일 EU 디지털 옴니버스 패키지 잠정 합의가 이루어져 2024년 발효 이후 처음으로 AI법이 개정되었다. AI 생성 비동의 친밀한 콘텐츠 금지 조항 신설, 고위험 AI 시스템 적용 기한 연장, 고위험 AI 분류 지침 초안 공개 등이 주요 변경 사항이다.",
+      "topic_tag": "AI거버넌스·규제",
+      "relevance_score": 0.879
+    },
+    {
+      "title": "SpaceX to Align Space Launch, Satellite Infrastructure and AI Development Under a Single Corporate Strategy",
+      "title_ko": "스페이스X, AI1 위성 공개… 우주 발사·위성 인프라·AI 개발 단일 전략으로 통합",
+      "url": "https://spaceanddefense.io/spacex-to-align-space-launch-satellite-infrastructure-and-ai-development-under-a-single-corporate-strategy/",
+      "source": "Space and Defense",
+      "published_date": "2026-06-08",
+      "summary": "SpaceX unveiled the AI1 satellite on June 8, 2026—its first orbital AI compute platform with 150 kW peak compute capacity and a 70-meter wingspan. Reports indicate Anthropic and Google are paying a combined $2.17 billion per month for orbital AI compute capacity.",
+      "summary_ko": "스페이스X가 2026년 6월 8일 첫 궤도 AI 연산 플랫폼인 'AI1' 위성을 공개했다. 최대 150kW의 연산 전력과 70미터 날개폭을 갖춘 이 위성에 앤트로픽과 구글이 합산 월 21억7000만 달러를 지불하는 것으로 알려졌다.",
+      "topic_tag": "항공우주·SAF",
+      "relevance_score": 0.871
+    },
+    {
+      "title": "Fintech 2026: Top Trends in AI-Driven Banking, Embedded Finance, and Real-Time Payments",
+      "title_ko": "핀테크 2026: AI 뱅킹·임베디드 금융·실시간 결제가 이끄는 금융 혁신",
+      "url": "https://www.blockchain-council.org/fintech/fintech-2026-ai-driven-banking-embedded-finance-real-time-payments/",
+      "source": "Blockchain Council",
+      "published_date": "2026-06-01",
+      "summary": "2026 is defined by the convergence of AI-driven banking, embedded finance, and real-time payments. 59% of finance functions now use AI (up from 37% in 2023). The GENIUS Act establishes a US stablecoin framework while EU MiCA standardizes crypto-asset expectations.",
+      "summary_ko": "2026년 금융 업계는 AI 뱅킹, 임베디드 금융, 실시간 결제가 동시에 수렴하는 시대를 맞이하고 있다. 금융 부문의 AI 활용 비율이 2023년 37%에서 59%로 급상승한 가운데, 미국 GENIUS 법안은 스테이블코인의 통합 법적 기반을 마련하고 EU의 MiCA는 암호자산 표준화를 견인하고 있다.",
+      "topic_tag": "화폐금융",
+      "relevance_score": 0.841
+    }
+  ],
+  "spare": [
+    {
+      "title": "Pentagon Backs AI Counter-Drone Startup with $500 Million Deal",
+      "title_ko": "펜타곤, AI 대드론 스타트업에 5억 달러 계약 체결",
+      "url": "https://dronelife.com/2026/05/21/perennial-autonomy-pentagon-contract/",
+      "source": "DRONELIFE",
+      "published_date": "2026-05-21",
+      "summary": "Joint Interagency Task Force 401 awarded a $500 million contract to Perennial Autonomy for AI-powered counter-UAS systems, as the Pentagon accelerates its counter-drone capabilities amid growing autonomous warfare threats.",
+      "summary_ko": "미 합동태스크포스(JIATF-401)가 페레니얼 오토노미에 5억 달러 규모의 AI 기반 대드론(Counter-UAS) 시스템 계약을 체결했다. 자율 무기 위협이 증가하는 상황에서 펜타곤의 대드론 역량 강화를 위한 전략적 투자다.",
+      "topic_tag": "방산",
+      "relevance_score": 0.833
+    },
+    {
+      "title": "FDA Testing Speedier Drug Development with Real-Time Clinical Trials",
+      "title_ko": "FDA, 실시간 임상시험 파일럿으로 항암제 개발 속도 혁신 시도",
+      "url": "https://www.statnews.com/2026/04/28/fda-real-time-clinical-trials-pilot-project-astrazeneca-amgen-cancer-drugs/",
+      "source": "STAT News",
+      "published_date": "2026-04-28",
+      "summary": "The FDA is piloting a real-time clinical trials program with AstraZeneca and Amgen to accelerate cancer drug development, aiming to provide faster feedback during trials and compress overall development timelines.",
+      "summary_ko": "FDA가 아스트라제네카, 암젠과 함께 실시간 임상시험 파일럿 프로그램을 시작하며 항암제 개발 속도 혁신에 나섰다. 임상 진행 중 신속한 피드백을 제공해 전체 개발 기간을 획기적으로 단축하는 것을 목표로 한다.",
+      "topic_tag": "헬스케어·바이오",
+      "relevance_score": 0.829
+    },
+    {
+      "title": "After the Power Crunch, AI Infrastructure Hits a GPU Wall",
+      "title_ko": "전력난 이후, AI 인프라 이번엔 GPU 공급 장벽에 봉착",
+      "url": "https://www.datacenterknowledge.com/infrastructure/after-the-power-crunch-ai-infrastructure-hits-a-gpu-wall",
+      "source": "Data Center Knowledge",
+      "published_date": "2026-06-03",
+      "summary": "Following the energy crisis, AI infrastructure now faces GPU supply constraints. HBM memory shortages are the tightest pressure points, with memory potentially accounting for 30% of hyperscaler AI spending in 2026—up from 8% in prior years.",
+      "summary_ko": "전력난을 지나온 AI 인프라가 이번엔 GPU 공급 부족이라는 새로운 장벽에 직면했다. HBM(고대역폭 메모리) 부족이 가장 심각한 병목으로 지목되며, 메모리가 초대규모 데이터센터의 AI 투자에서 차지하는 비중이 기존 8%에서 2026년 30%로 급증할 전망이다.",
+      "topic_tag": "반도체·HW인프라",
+      "relevance_score": 0.824
+    }
+  ]
+}
