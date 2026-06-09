@@ -59,8 +59,15 @@ def main() -> None:
         print("[Routine B] theme-plan.json 없음 — 종료")
         return
 
-    tech = theme_plan["tech_report"]
-    nontech = theme_plan["nontech_report"]
+    report_1 = theme_plan["report_1"]
+    report_2 = theme_plan["report_2"]
+
+    # 테마 영역 자동 선택 (주차 번호 기반 순환)
+    tech_areas = ["AI 기술 & 인프라", "AI 산업 & 시장"]
+    nontech_areas = ["공공 AI 서비스 & 규제", "AI 경제 & 금융", "AI 정책 & 거버넌스", "AI 사회 & 문화", "AI 안보 & 지정학"]
+    week_num = int(week_id.split("-W")[1])
+    tech = {**report_1, "theme_area": tech_areas[week_num % len(tech_areas)]}
+    nontech = {**report_2, "theme_area": nontech_areas[week_num % len(nontech_areas)]}
 
     # 뉴스 후보 읽기
     candidates = gh.read_json(f"{weekly_path}/selected-articles.json")
@@ -145,8 +152,8 @@ def main() -> None:
             subject=f"[AI 웹진] {week_id} 초안 준비 완료 — 검토 및 승인 요청",
             body=(
                 f"이번 주({week_id}) 기획 보고서 2편 및 뉴스레터 초안이 준비되었습니다.\n\n"
-                f"기술 분야: {tech['title']}\n"
-                f"비기술 분야: {nontech['title']}\n\n"
+                f"보고서 1: {tech['title']} ({tech['theme_area']})\n"
+                f"보고서 2: {nontech['title']} ({nontech['theme_area']})\n\n"
                 "관리자 페이지에서 초안을 검토하고 승인해 주세요.\n"
                 "승인 즉시 웹진 배포 및 뉴스레터 발송이 시작됩니다."
             ),
