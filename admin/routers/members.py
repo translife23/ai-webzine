@@ -17,9 +17,9 @@ router = APIRouter()
 
 
 class MemberCreate(BaseModel):
+    name: str = ""
     username: str
-    email: str
-    role: str = "editor"
+    email: str = ""
     initial_password: str = "admin1234!"
 
 
@@ -47,9 +47,6 @@ def create_member(body: MemberCreate, session_id: str | None = Cookie(default=No
     user = _get_current_user(session_id)
     if user["role"] != "admin":
         raise HTTPException(status_code=403, detail="관리자 권한 필요")
-    if body.role not in ("admin", "editor"):
-        raise HTTPException(status_code=400, detail="role은 admin 또는 editor")
-
     gh = GitHubHelper()
     data = gh.read_json("data/members.json") or {"version": 1, "members": []}
 
@@ -60,9 +57,10 @@ def create_member(body: MemberCreate, session_id: str | None = Cookie(default=No
     pw_hash = bcrypt.hashpw(body.initial_password.encode(), bcrypt.gensalt(12)).decode()
     data["members"].append({
         "id": new_id,
+        "name": body.name,
         "username": body.username,
         "password_hash": pw_hash,
-        "role": body.role,
+        "role": "member",
         "email": body.email,
         "created_at": datetime.now(timezone.utc).isoformat(),
     })
