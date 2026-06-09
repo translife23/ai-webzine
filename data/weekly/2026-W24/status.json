@@ -1,32 +1,32 @@
 {
-    "week":  "2026-W24",
-    "status":  "DRAFT_READY",
-    "timeline":  {
-                     "news_search_started":  "2026-06-09T08:11:58.883294+00:00",
-                     "news_search_completed":  "2026-06-09T08:11:58.883294+00:00",
-                     "theme_plan_submitted":  "2026-06-09T09:04:21.383451+00:00",
-                     "draft_ready":  "2026-06-09T09:15:52.076385+00:00",
-                     "approved":  "2026-06-09T15:03:11.919614+00:00",
-                     "failed":  "2026-06-09T15:03:45.665967+00:00",
-                     "publishing_started":  "2026-06-09T15:07:39.093965+00:00",
-                     "published":  "2026-06-09T21:51:06.200692+00:00"
-                 },
-    "topics_covered":  [
-                           "항공우주·SAF",
-                           "화폐금융",
-                           "로봇",
-                           "제조·스마트팩토리",
-                           "반도체·HW인프라",
-                           "에너지",
-                           "방산",
-                           "헬스케어·바이오",
-                           "농업·푸드테크",
-                           "AI거버넌스·규제",
-                           "금융투자"
-                       ],
-    "selected_count":  12,
-    "articles_count":  22,
-    "confirmed_at":  "2026-06-09T00:00:00Z",
-    "draft_report":  "data/weekly/2026-W24/draft-report.md",
-    "research_searches":  26
+  "week": "2026-W24",
+  "status": "PUBLISHING",
+  "timeline": {
+    "news_search_started": "2026-06-09T08:11:58.883294+00:00",
+    "news_search_completed": "2026-06-09T08:11:58.883294+00:00",
+    "theme_plan_submitted": "2026-06-09T09:04:21.383451+00:00",
+    "draft_ready": "2026-06-09T09:15:52.076385+00:00",
+    "approved": "2026-06-09T15:03:11.919614+00:00",
+    "failed": "2026-06-09T15:03:45.665967+00:00",
+    "publishing_started": "2026-06-09T21:58:36.403039+00:00",
+    "published": "2026-06-09T21:51:06.200692+00:00"
+  },
+  "topics_covered": [
+    "항공우주·SAF",
+    "화폐금융",
+    "로봇",
+    "제조·스마트팩토리",
+    "반도체·HW인프라",
+    "에너지",
+    "방산",
+    "헬스케어·바이오",
+    "농업·푸드테크",
+    "AI거버넌스·규제",
+    "금융투자"
+  ],
+  "selected_count": 12,
+  "articles_count": 22,
+  "confirmed_at": "2026-06-09T00:00:00Z",
+  "draft_report": "data/weekly/2026-W24/draft-report.md",
+  "research_searches": 26
 }
