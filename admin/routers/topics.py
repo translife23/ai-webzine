@@ -1,4 +1,4 @@
-"""기획 주제 라우터 — 관리자가 보고서 주제 2건을 입력한다. 테마 영역은 Routine B가 자동 선택."""
+"""기획 주제 라우터 — 관리자가 보고서 주제 1건을 입력한다. 보고서 제목·테마 영역은 Routine B가 자동 선택."""
 
 from datetime import datetime, timezone
 from fastapi import APIRouter, Cookie, HTTPException
@@ -14,14 +14,12 @@ router = APIRouter()
 
 
 class ReportPlan(BaseModel):
-    title: str
     agenda: str
     perspective: str
 
 
 class ThemePlan(BaseModel):
     report_1: ReportPlan
-    report_2: ReportPlan
 
 
 @router.get("/plan")
@@ -30,7 +28,7 @@ def get_plan(session_id: str | None = Cookie(default=None)):
     week = _week_id()
     gh = GitHubHelper()
     plan = gh.read_json(f"data/weekly/{week}/theme-plan.json")
-    return plan or {"week": week, "submitted": False}
+    return plan or {"week": week, "submitted_at": None}
 
 
 @router.post("/plan")
@@ -42,7 +40,6 @@ def submit_plan(body: ThemePlan, session_id: str | None = Cookie(default=None)):
     plan_data = {
         "week": week,
         "report_1": body.report_1.model_dump(),
-        "report_2": body.report_2.model_dump(),
         "submitted_by": user["username"],
         "submitted_at": _now(),
     }
@@ -71,7 +68,6 @@ def update_plan(body: ThemePlan, session_id: str | None = Cookie(default=None)):
     plan_data = {
         "week": week,
         "report_1": body.report_1.model_dump(),
-        "report_2": body.report_2.model_dump(),
         "submitted_by": user["username"],
         "submitted_at": _now(),
     }
