@@ -1,7 +1,22 @@
 {
   "week": "2026-W24",
-  "status": "NEWS_SEARCHING",
+  "status": "AWAITING_ADMIN_REVIEW",
   "timeline": {
-    "news_search_started": "2026-06-09T08:11:58.883294+00:00"
-  }
+    "news_search_started": "2026-06-09T08:11:58.883294+00:00",
+    "news_search_completed": "2026-06-09T08:11:58.883294+00:00"
+  },
+  "topics_covered": [
+    "항공우주·SAF",
+    "화폐금융",
+    "로봇",
+    "제조·스마트팩토리",
+    "반도체·HW인프라",
+    "에너지",
+    "방산",
+    "헬스케어·바이오",
+    "농업·푸드테크",
+    "AI거버넌스·규제",
+    "금융투자"
+  ],
+  "selected_count": 12
 }
