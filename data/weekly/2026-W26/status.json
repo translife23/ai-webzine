@@ -1,10 +1,11 @@
 {
   "week": "2026-W26",
-  "status": "PUBLISHING",
+  "status": "PUBLISHED",
   "timeline": {
     "news_search_started": "2026-06-13T08:15:19.142624+00:00",
     "news_search_completed": "2026-06-13T08:15:19.142624+00:00",
-    "publishing_started": "2026-06-13T14:11:24.045988+00:00"
+    "publishing_started": "2026-06-13T14:11:32.493678+00:00",
+    "published": "2026-06-13T14:11:32.493700+00:00"
   },
   "topics_covered": [
     "화폐금융",
@@ -20,5 +21,7 @@
     "항공우주·SAF"
   ],
   "articles_count": 22,
-  "confirmed_at": "2026-06-13T08:15:19.142624+00:00"
+  "confirmed_at": "2026-06-13T08:15:19.142624+00:00",
+  "newsletter_sent": 1,
+  "newsletter_failed": 0
 }
