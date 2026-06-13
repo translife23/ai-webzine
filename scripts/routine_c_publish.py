@@ -27,7 +27,11 @@ from routine_a_news_search import get_week_id
 
 
 def main() -> None:
-    week_id = get_week_id()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--week", default=None, help="주차 ID (예: 2026-W26). 생략 시 현재 주차")
+    args, _ = parser.parse_known_args()
+    week_id = args.week or get_week_id()
     print(f"[Routine C] 발행 시작: {week_id}")
 
     gh = GitHubHelper()
