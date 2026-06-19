@@ -1,11 +1,12 @@
 {
   "week": "2026-W25",
-  "status": "PUBLISHING",
+  "status": "PUBLISHED",
   "timeline": {
     "news_search_started": "2026-06-09T15:05:44.773143+00:00",
     "news_search_completed": "2026-06-09T15:05:44.773156+00:00",
     "failed": "2026-06-19T14:05:05.881729+00:00",
-    "publishing_started": "2026-06-19T14:08:26.823089+00:00"
+    "publishing_started": "2026-06-19T14:08:36.152727+00:00",
+    "published": "2026-06-19T14:08:36.152852+00:00"
   },
   "topics_covered": [
     "AI거버넌스·규제",
@@ -22,5 +23,7 @@
   ],
   "articles_count": 22,
   "confirmed_at": "2026-06-09T15:05:44.773160+00:00",
-  "error": "기획 보고서가 없습니다: data/weekly/2026-W25/draft-report.md"
+  "error": "기획 보고서가 없습니다: data/weekly/2026-W25/draft-report.md",
+  "newsletter_sent": 1,
+  "newsletter_failed": 0
 }
