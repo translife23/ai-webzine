@@ -1,10 +1,11 @@
 {
   "week": "2026-W25",
-  "status": "PUBLISH_FAILED",
+  "status": "PUBLISHING",
   "timeline": {
     "news_search_started": "2026-06-09T15:05:44.773143+00:00",
     "news_search_completed": "2026-06-09T15:05:44.773156+00:00",
-    "failed": "2026-06-19T14:05:05.881729+00:00"
+    "failed": "2026-06-19T14:05:05.881729+00:00",
+    "publishing_started": "2026-06-19T14:08:26.823089+00:00"
   },
   "topics_covered": [
     "AI거버넌스·규제",
