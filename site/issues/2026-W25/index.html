@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HBM 반도체 패권과 AI 전력 위기: 데이터센터 인프라 대전환의 분기점 — AI 웹진 2026년 제25호</title>
+  <link rel="stylesheet" href="../../assets/css/webzine.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <a href="../../" style="text-decoration:none;color:inherit">
+            <span class="logo-text">AI 웹진</span>
+            <span class="logo-subtitle">정보시스템감리 AI 동향</span>
+          </a>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <span class="issue-badge">2026년 제25호</span>
+          <span class="pub-date">2026년 06월 19일</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      
+      <section>
+        <div class="section-label">기획 보고서</div>
+        <div class="report-card">
+          <div class="report-title">HBM 반도체 패권과 AI 전력 위기: 데이터센터 인프라 대전환의 분기점</div>
+          <details>
+            <summary>보고서 전문 보기 ▾</summary>
+            <div class="report-body">
+              <h1>HBM 반도체 패권과 AI 전력 위기: 데이터센터 인프라 대전환의 분기점</h1>
+
+<p><strong>테마 영역:</strong> AI 기술 & 인프라</p>
+<p><strong>분석 관점:</strong> 정보시스템 감리사·IT 감사 전문가 실무 관점에서의 AI 인프라 리스크와 공급망 취약성 분석</p>
+
+<p>---</p>
+
+<h2>1. 배경지식</h2>
+
+<p>AI 산업의 급성장은 두 가지 핵심 물리적 병목을 동시에 노출시키고 있다. 첫 번째는 <strong>HBM(High Bandwidth Memory) 반도체 공급망의 집중화</strong>, 두 번째는 <strong>데이터센터의 급격한 전력 수요 증가</strong>다.</p>
+
+<p>HBM은 AI 학습·추론에 필수적인 고대역폭 메모리로, 엔비디아 H100·H200 등 GPU에 탑재된다. 삼성전자·SK하이닉스·마이크론 3개사가 사실상 전 세계 공급을 독점하는 과점 구조로, 공급이 수요를 따라가지 못하는 병목 현상이 구조화됐다. 2026년 현재 HBM이 전체 DRAM 웨이퍼의 23%를 점유하며, 이로 인해 소비자용 DRAM과 낸드 플래시의 공급 부족과 가격 급등이 이어지고 있다.</p>
+
+<p>전력 측면에서는 글로벌 데이터센터 전력 소비가 2026년 약 1,100TWh에 달할 것으로 전망된다. 이는 일본 전체 전력 소비량과 맞먹는 수준으로, AI 인프라 확장이 에너지 인프라의 물리적 한계에 직면했음을 의미한다. 마이크로소프트·구글·아마존은 안정적 전력 확보를 위해 소형모듈원전(SMR) 조건부 구매 계약에 잇달아 서명하고 있으며, SMR 파이프라인은 1년 새 25GW에서 45GW로 두 배 가까이 증가했다 (출처: Morgan Stanley, 2026년 4월).</p>
+
+<p>정보시스템 감리 관점에서 이 두 병목은 단순한 공급망 이슈가 아니라 <strong>AI 인프라 의존도 집중 리스크</strong>이자 <strong>운영 연속성 감리 대상</strong>으로 부상하고 있다.</p>
+
+<p>---</p>
+
+<h2>2. 최근 3년간 동향 (2023~2026)</h2>
+
+<p><strong>2023년:</strong> 챗GPT 열풍으로 AI 인프라 투자가 급증했다. 엔비디아 H100 GPU 대기 수요가 폭발적으로 늘었고, HBM 선두주자 SK하이닉스의 영업이익률이 사상 최고치를 기록했다. 미국의 대중 반도체 수출 통제가 강화되며 AI 칩 공급망의 지정학적 분리가 본격화됐다.</p>
+
+<p><strong>2024년:</strong> HBM 세대 경쟁이 격화됐다. SK하이닉스는 HBM3E를 엔비디아에 독점 공급하며 시장 우위를 강화했고, 삼성전자는 HBM3E 품질 문제로 엔비디아 공급 지연을 겪었다. 마이크로소프트·구글이 자체 AI 칩(TPU, Azure Maia)을 공개하며 엔비디아 의존도 탈피를 모색했다. 데이터센터 전력 수요 급증이 전력망 업그레이드 수요로 이어지며 송배전 장비 업체 주가가 급등했다.</p>
+
+<p><strong>2025년:</strong> HBM이 DRAM 웨이퍼 점유율 20%를 돌파하며 소비자 메모리 가격이 가파르게 상승했다. 마이크로소프트·아마존·구글이 SMR(소형모듈원전) 공급 계약에 잇달아 서명했다. 미국 정부가 AI 데이터센터 전력 인프라 특별 예산을 편성했다. 삼성전자가 HBM3E 공급을 재개하며 SK하이닉스·마이크론과의 3파전이 복원됐다.</p>
+
+<p><strong>2026년 상반기:</strong> 삼성·SK하이닉스가 차세대 <strong>HBF(High Bandwidth Flash)</strong> 샘플 공개를 앞두고 추론 반도체 주도권 경쟁에 돌입했다. AI 반도체 시장의 무게 중심이 학습용 GPU에서 추론용 NPU로 이동하는 구조 전환이 본격화됐다. 한국 정부는 데이터센터 전력 수요가 2028년까지 6,175MW로 연평균 11% 증가할 것으로 전망하며 HVDC+스마트그리드 '에너지 고속도로' 정책을 추진하고 있다 (출처: ESG타임즈, Tech Insider, 이로운뉴스, 2026년 4~6월).</p>
+
+<p>---</p>
+
+<h2>3. 최근 주목받는 이유</h2>
+
+<p>2026년이 AI 인프라의 <strong>물리적 한계 충돌 원년</strong>으로 기록될 가능성이 높기 때문이다. 반도체와 전력이라는 두 축이 동시에 AI 성장의 발목을 잡으면서, 기술 가속의 패러다임이 <strong>인프라 조달 경쟁</strong>으로 전환되고 있다.</p>
+
+<p>반도체 측면에서는 HBM 생산 집중에 따른 소비자 DRAM 공급 부족이 스마트폰·PC 산업에 부정적 영향을 미치고 있다. 이는 AI 인프라 투자가 다른 IT 부문의 자원 공급을 잠식하는 '인프라 구축 효과'를 명확히 보여준다. 동시에 퓨리오사AI·리벨리온 등 국산 AI 반도체 기업이 글로벌 기준을 상회하는 성능을 입증하며 공급망 다변화의 가능성이 열리고 있다.</p>
+
+<p>전력 측면에서는 AI가 실질적인 탄소 배출원으로 부상하며 ESG 위험 요인이 됐다. 특히 정밀농업·AI 헬스케어 등 '친환경' AI 응용 분야조차 지원 데이터센터의 전력 소비로 인해 순(net) 환경 영향이 부정적일 수 있다는 비판이 제기되고 있다 (출처: Inside Climate News, 2026년 2월). 정보시스템 감리사 관점에서는 외부 클라우드 인프라 의존도 증가에 따른 <strong>전력·냉각 이중화 감리</strong>와 <strong>공급망 집중 리스크 평가</strong>가 새로운 감리 항목으로 요구된다.</p>
+
+<p>---</p>
+
+<h2>4. 주요 쟁점</h2>
+
+<h3>쟁점 1: HBM 공급 과점 구조와 AI 인프라 공급망 리스크 — 분산이 필요한가?</h3>
+
+<p><strong>주장 A (공급망 다변화 시급):</strong></p>
+<ul>
+<li>삼성·SK하이닉스·마이크론 3사 과점은 지정학적 충격(미중 갈등, 반도체 수출 통제, 자연재해)에 취약하다. 단일 공급업체 의존도가 높은 AI 인프라는 운영 연속성 측면에서 심각한 단일 실패점(SPOF)을 내포한다.</li>
+<li>한국·대만에 집중된 AI 반도체 생산 기반이 지정학적 위험에 노출돼 있으며, 이를 분산하지 않으면 AI 인프라 자체가 글로벌 안보 취약점이 된다. 미국의 Chips Act, EU의 Chips Act가 이를 인식한 정책 대응이다.</li>
+</ul>
+
+<p><strong>주장 B (현실적 집중화 수용):</strong></p>
+<ul>
+<li>HBM 생산은 극도로 정밀한 공정과 대규모 R&D 투자가 요구돼 단기간에 신규 진입자가 경쟁력을 갖추기 어렵다. 과점 구조는 불가피한 기술적 특성에서 비롯된 것이지 인위적 진입 장벽이 아니다.</li>
+<li>집중화된 공급망은 오히려 품질 관리와 기술 표준화에 유리하다. 분산 투자를 강제하면 글로벌 AI 인프라의 단가가 급등해 AI 접근성의 불평등이 심화될 수 있다.</li>
+</ul>
+
+<h3>쟁점 2: AI 데이터센터 전력 확보를 위한 원전(SMR) 부활 — 속도보다 안전이 우선인가?</h3>
+
+<p><strong>주장 A (SMR 신속 도입 지지):</strong></p>
+<ul>
+<li>AI 데이터센터의 24시간 안정적 전력 수요에는 간헐성이 없는 기저부하 전원이 필수적이다. 태양광·풍력의 변동성 문제를 해결하지 못한 상황에서 SMR은 탄소 중립과 전력 안정성을 동시에 달성할 수 있는 현실적 대안이다.</li>
+<li>빅테크의 SMR 구매 계약이 민간 투자를 견인해 기술 성숙을 앞당기고 있다. AI 수요가 SMR 산업의 규모의 경제를 실현시키는 촉매가 될 수 있다.</li>
+</ul>
+
+<p><strong>주장 B (신중한 접근 필요):</strong></p>
+<ul>
+<li>SMR은 아직 상용화 단계가 아닌 실증 단계에 있으며, 조건부 구매 계약이 실제 가동으로 이어질지 불확실하다. 2020년대 중반 여러 SMR 프로젝트가 비용 초과와 기술 문제로 취소된 전례가 있다.</li>
+<li>AI 기업의 원전 직구매 계약이 일반 소비자의 전력 공급보다 우선시되는 구조는 에너지 형평성 문제를 야기한다. 에너지 전환 과정에서 AI 인프라가 공공재인 전력망을 사유화할 위험에 대한 규제 논의가 필요하다.</li>
+</ul>
+
+<p>---</p>
+
+<h2>5. 전망</h2>
+
+<h3>단기 전망 (6개월 이내, 2026년 하반기)</h3>
+
+<ul>
+<li><strong>HBF 샘플 공개 및 차세대 반도체 경쟁 본격화:</strong> 삼성전자·SK하이닉스의 HBF 샘플이 공개되면 AI 추론 반도체 시장의 규격 경쟁이 새로운 국면에 진입한다. 엔비디아·AMD 등 칩 설계사와의 HBF 인터페이스 표준 합의가 핵심 변수다.</li>
+<li><strong>국내 데이터센터 전력 수급 계획 확정:</strong> 산업부가 2026년 말까지 AI 데이터센터 전력 수급 특별계획을 발표할 예정이다. 원전 수명 연장 결정과 SMR 파이롯 부지 선정이 연내 이루어질 가능성이 있다.</li>
+<li><strong>소비자 DRAM 가격 안정화 여부:</strong> HBM 웨이퍼 점유율이 23% 수준에서 동결되거나 하락할 경우 소비자 메모리 가격이 2026년 4분기부터 안정세로 전환될 수 있다. 스마트폰·PC 제조사의 재고 전략이 주요 지표가 된다.</li>
+</ul>
+
+<h3>중기 전망 (1~3년, 2027~2028년)</h3>
+
+<ul>
+<li><strong>NPU 중심 추론 반도체 시장 성숙:</strong> AI 반도체 시장이 학습용 GPU에서 추론용 NPU로 무게 중심이 완전히 이동하면서, 퓨리오사AI·리벨리온 등 국내 기업의 글로벌 시장 점유 기회가 열린다. 엣지 AI 확산으로 저전력 NPU 수요가 급증할 전망이다.</li>
+<li><strong>AI 전력 소비 규제 도입:</strong> EU AI법의 환경 영향 조항과 각국의 탄소중립 의무가 결합해, AI 학습·추론 시스템에 전력 효율 기준과 재생에너지 사용 비율 의무가 도입될 것이다. 정보시스템 감리에 AI 인프라 탄소 발자국 검증 항목이 편입될 가능성이 높다.</li>
+<li><strong>공급망 다변화 성과 가시화:</strong> 미국 Chips Act 보조금을 받은 TSMC 애리조나 팹과 삼성 텍사스 팹이 본격 가동되며 AI 반도체 생산 지리적 분산이 이루어진다. 한국 정부의 '에너지 고속도로' 정책이 2028년 완성되면 국내 데이터센터 입지 매력도가 높아질 전망이다.</li>
+</ul>
+
+            </div>
+          </details>
+        </div>
+      </section>
+
+      
+      <section>
+        <div class="section-label">이번 주 AI 동향 — 22건</div>
+        <div class="articles-grid">
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#1D4ED8">화폐금융</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.pymnts.com/cryptocurrency/2026/european-central-bank-board-member-says-stablecoins-threaten-financial-stability/" target="_blank" rel="noopener">ECB 임원, 스테이블코인이 금융 안정 위협한다 경고</a>
+            </div>
+            <div class="article-summary">유럽중앙은행 임원이 스테이블코인의 급성장이 금융 안정을 위협한다고 경고했다. 민간 암호화폐와 달리 규제 밖에 있는 스테이블코인이 시스템 위험 요인으로 지목됐다. ECB는 디지털 유로를 민간 암호화폐의 규제된...</div>
+            <div class="article-meta">
+              <span>PYMNTS.com</span>
+              <span>2026-06-01</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#1D4ED8">화폐금융</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.blockmedia.co.kr/archives/1097367" target="_blank" rel="noopener">한은, 프로젝트 한강 2단계 확대 승부수</a>
+            </div>
+            <div class="article-summary">한국은행이 예금토큰 실사용성 확보를 위해 프로젝트 한강 2단계를 확대 추진한다. 1단계에서 지적된 '쓸 곳 없다' 문제를 반영해 편의점 등 사용처를 전국 단위로 늘렸다. 지문 인증·자동 전환·송금 기능이...</div>
+            <div class="article-meta">
+              <span>블록미디어</span>
+              <span>2026-05-20</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#1E40AF">금융투자</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://medium.com/technologai/ai-driven-trading-hits-a-27-billion-inflection-point-and-the-risks-are-scaling-with-it-d684b513c6a4" target="_blank" rel="noopener">AI 주도 트레이딩, 270억 달러 분기점 도달…리스크도 함께 확대</a>
+            </div>
+            <div class="article-summary">AI 알고리즘 트레이딩 시장이 270억 달러 규모에 도달하며 성장 분기점을 맞이했다. 알고리즘이 전체 주식 거래량의 60~70%를 실행하는 수준으로 시장을 장악하고 있다. AI 봇 간 무의식적 담합으로 가격을...</div>
+            <div class="article-meta">
+              <span>Medium / TechnologAI</span>
+              <span>2026-03-15</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#1E40AF">금융투자</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.chainup.com/ko/%EB%B8%94%EB%A1%9C%EA%B7%B8/AI%EA%B0%80-%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90-%EA%B1%B0%EB%9E%98%EC%86%8C-%EB%B3%B4%EC%95%88%EC%9D%84-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%B0%94%EA%BE%B8%EA%B3%A0-%EC%9E%88%EB%8A%94%EA%B0%80/" target="_blank" rel="noopener">2026년 인공지능이 암호화폐 거래 및 거래소 보안을 어떻게 변화시킬 것인가</a>
+            </div>
+            <div class="article-summary">2026년 AI는 암호화폐 거래소에서 실험 기술이 아닌 필수 운영 요소가 됐다. AI는 사기 탐지·이상 거래 모니터링·실시간 보안 대응에 핵심 역할을 수행한다. 알고리즘 트레이딩과 AI 결합이 거래 속도와...</div>
+            <div class="article-meta">
+              <span>ChainUp</span>
+              <span>2026-01-10</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#065F46">로봇</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.cnbc.com/2026/06/03/humanoid-robots-trillion-dollar-ai-market.html" target="_blank" rel="noopener">휴머노이드 로봇, 차세대 AI 투자 기회로 주목받다</a>
+            </div>
+            <div class="article-summary">글로벌 투자 업계가 휴머노이드 로봇을 차세대 AI 핵심 투자 기회로 주목하고 있다. 피겨AI의 BotQ 공장은 시간당 로봇 1대 생산 속도를 달성하며 양산 체제에 진입했다. BMW·도요타 등 주요 완성차...</div>
+            <div class="article-meta">
+              <span>CNBC</span>
+              <span>2026-06-03</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#065F46">로봇</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://m.sedaily.com/amparticle/20049026" target="_blank" rel="noopener">서울포럼 2026 '내년부터 로봇 상용화 본격화…현장 데이터가 관건'</a>
+            </div>
+            <div class="article-summary">서울포럼에서 로봇 전문가들이 2027년부터 상용화가 본격화될 것으로 전망했다. 휴머노이드 로봇의 성공 여부는 양질의 현장 데이터 확보에 달려 있다고 강조됐다. 삼익THK 등 국내 기업이 물류 특화 AMR에...</div>
+            <div class="article-meta">
+              <span>서울경제</span>
+              <span>2026-05-28</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#92400E">에너지</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.morganstanley.com/insights/articles/powering-ai-energy-market-outlook-2026" target="_blank" rel="noopener">에너지 시장, AI 전력 병목 해소 경쟁에 돌입하다</a>
+            </div>
+            <div class="article-summary">2026년 글로벌 데이터센터 전력 소비가 일본 전체와 맞먹는 1,100TWh에 도달할 전망이다. 마이크로소프트·구글·아마존이 SMR 소형원전 구매 계약에 앞다퉈 서명하고 있다. SMR 조건부 구매 계약...</div>
+            <div class="article-meta">
+              <span>Morgan Stanley</span>
+              <span>2026-04-15</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#92400E">에너지</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.esgtimes.kr/news/489666" target="_blank" rel="noopener">AI 전력 해법으로 원전 부상… 미국, 데이터센터용 차세대 SMR에 1,270억 원 투입</a>
+            </div>
+            <div class="article-summary">미국 정부가 AI 데이터센터 전력 공급용 차세대 SMR 개발에 1,270억 원을 투입했다. 국내 데이터센터 전력 수요는 2025년 4,461MW에서 2028년 6,175MW로 급증할 전망이다. 정부는...</div>
+            <div class="article-meta">
+              <span>ESG타임즈</span>
+              <span>2026-04-20</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#7F1D1D">방산</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://securityaffairs.com/191842/cyber-warfare-2/ai-cyberwarfare-and-autonomous-weapons-inside-americas-new-military-strategy.html" target="_blank" rel="noopener">AI·사이버전·자율무기: 미국의 새로운 군사 전략 내부 보고서</a>
+            </div>
+            <div class="article-summary">미 국방부가 빅테크와 AI를 기밀 군사망에 통합하는 계약을 체결했다. 130만 명 이상의 국방부 직원이 GenAI.mil 플랫폼을 통해 AI를 활용하고 있다. 자율 드론 군집이 격추 손실을 자동 재분배하는...</div>
+            <div class="article-meta">
+              <span>Security Affairs</span>
+              <span>2026-05-15</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#7F1D1D">방산</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.dataeconomy.co.kr/news/articleView.html?idxno=40043" target="_blank" rel="noopener">K-방산 수출 154억 달러 세계 4위, 천궁-II 명중률 96%가 증명한 AI 방산 시대</a>
+            </div>
+            <div class="article-summary">2025년 한국 방산 수출이 154억 달러로 세계 4위를 기록하며 역대 최고치를 달성했다. 천궁-II의 96% 명중률이 K-방산 브랜드의 신뢰도를 글로벌 시장에서 입증했다. AI와 자율무인체계가 K-방산의...</div>
+            <div class="article-meta">
+              <span>한국데이터경제신문</span>
+              <span>2026-05-10</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#0F766E">헬스케어·바이오</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.healthcaremea.com/2026/06/09/pfizer-expands-ai-drug-discovery-strategy-through-licensing-agreement-with-chai-discovery/" target="_blank" rel="noopener">화이자, Chai Discovery와 AI 신약 개발 전략 라이선스 계약 체결</a>
+            </div>
+            <div class="article-summary">화이자가 AI 신약 개발 전문기업 Chai Discovery와 전략적 라이선스 계약을 체결했다. 이번 계약으로 화이자는 AI 기반 단백질 구조 예측 기술을 신약 파이프라인에 통합한다. 엘리 릴리·인실리코 등...</div>
+            <div class="article-meta">
+              <span>HealthCare MEA</span>
+              <span>2026-06-09</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#0F766E">헬스케어·바이오</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.fnnews.com/news/202605131822417965" target="_blank" rel="noopener">AI 기반 신약 개발이 새 패러다임… 우리에겐 절호의 기회</a>
+            </div>
+            <div class="article-summary">AI가 신약 표적 발굴부터 후보물질 선별까지 전 과정을 지원하며 주목받고 있다. LG AI연구원의 '엑사원 패스'가 병리 이미지 분석으로 유전자 변이를 예측해 주목받았다. 2026년은 국내 의료 AI 기업의...</div>
+            <div class="article-meta">
+              <span>파이낸셜뉴스</span>
+              <span>2026-05-13</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#6B21A8">반도체·HW인프라</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://tech-insider.org/memory-chip-shortage-2026-ai-consumer-electronics/" target="_blank" rel="noopener">2026년 메모리 칩 부족: HBM이 DRAM 웨이퍼의 23%를 점유</a>
+            </div>
+            <div class="article-summary">삼성·SK하이닉스·마이크론이 AI 가속기용 HBM 생산에 DRAM 웨이퍼 23%를 전용했다. 이로 인해 소비자용 DRAM과 NAND 플래시가 심각한 공급 부족에 시달리고 있다. DRAM 가격이 2025년 초...</div>
+            <div class="article-meta">
+              <span>Tech Insider</span>
+              <span>2026-04-10</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#6B21A8">반도체·HW인프라</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.erounews.kr/news/articleView.html?idxno=4065" target="_blank" rel="noopener">삼성전자·SK하이닉스, HBF 샘플 공개 앞두고 '추론 반도체 패권' 레이스 돌입</a>
+            </div>
+            <div class="article-summary">삼성·SK하이닉스가 HBF 샘플 공개를 앞두고 추론 반도체 패권 경쟁에 돌입했다. AI 반도체 시장이 학습용 GPU 중심에서 추론용 NPU로 무게 중심이 이동하고 있다. 삼성전자는 HBM4 양산을 시작하며...</div>
+            <div class="article-meta">
+              <span>이로운뉴스</span>
+              <span>2026-06-04</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#166534">농업·푸드테크</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://insideclimatenews.org/news/28022026/precision-agriculture-and-ai/" target="_blank" rel="noopener">농업계, 정밀농업과 AI 도입 확대…환경 편익 논란도 동반</a>
+            </div>
+            <div class="article-summary">농업 분야가 AI·드론·위성 기반 정밀농업 기술을 빠르게 수용하고 있다. 그러나 정밀농업의 실질적 환경 편익에 대한 비판적 검토가 학계에서 제기되고 있다. AI 데이터센터 전력 소비가 정밀농업의 탄소 절감...</div>
+            <div class="article-meta">
+              <span>Inside Climate News</span>
+              <span>2026-02-28</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#166534">농업·푸드테크</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.foodtoday.or.kr/news/article.html?no=199861" target="_blank" rel="noopener">농진청 'AI·그린바이오로 농업 대전환'…2026년 예산 1조1325억 편성</a>
+            </div>
+            <div class="article-summary">농촌진흥청이 AI·그린바이오로 농업 대전환을 선언하고 1조1325억 예산을 확정했다. 스마트 데이터농업기술 개발과 기후적응형 저탄소 농업기술 확산이 핵심 과제다. 네이버클라우드와 농진청이 협력해 농업 분야...</div>
+            <div class="article-meta">
+              <span>푸드투데이</span>
+              <span>2026-01-15</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#1E293B">제조·스마트팩토리</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.gartner.com/en/webinar/797437/1795012-manufacturing-predicts-2026-digital-twins-ai-agents-and-the-race-to-autonomous-operations" target="_blank" rel="noopener">제조업 2026 전망: 디지털트윈·AI 에이전트와 자율 운영 경쟁</a>
+            </div>
+            <div class="article-summary">가트너는 2030년까지 AI 에이전트가 핵심 생산 운영의 10%를 자율 조율할 것으로 예측했다. 디지털트윈이 단순 복제에서 실시간 데이터 기반 지능형 시스템으로 진화하고 있다. 예지정비 AI가 진동·온도·음향...</div>
+            <div class="article-meta">
+              <span>Gartner</span>
+              <span>2026-01-20</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#1E293B">제조·스마트팩토리</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.industrynews.co.kr/news/articleView.html?idxno=77059" target="_blank" rel="noopener">AI가 제어하는 공장 현실로… 2026년 자율제조 시대 개막</a>
+            </div>
+            <div class="article-summary">산업부가 AI 자율제조 기업을 육성하는 'AI 팩토리 전문기업' 제도를 본격 가동했다. 스마트팩토리 도입 중소기업의 80%가 AI 기술 필요성을 체감하고 있는 것으로 나타났다. AI 에이전트와 온디바이스...</div>
+            <div class="article-meta">
+              <span>인더스트리뉴스</span>
+              <span>2026-03-10</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#B45309">AI거버넌스·규제</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/" target="_blank" rel="noopener">EU AI법 개정: 시한 연장·규정 간소화·신규 금지 조항 추가</a>
+            </div>
+            <div class="article-summary">EU가 5월 7일 AI법 개정안에 합의해 고위험 AI 의무 적용을 최대 16개월 연기했다. 규정 간소화를 위한 AI 옴니버스 개정안이 디지털 규제 통합 패키지로 추진됐다. AI 생성 딥페이크 친밀 콘텐츠 규제...</div>
+            <div class="article-meta">
+              <span>Global Policy Watch</span>
+              <span>2026-06-05</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#B45309">AI거버넌스·규제</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.daeryunlaw-comp.com/insights/266" target="_blank" rel="noopener">EU는 유예, 한국은 전면 시행… AI 규제 속도의 차이는 왜 생겼을까</a>
+            </div>
+            <div class="article-summary">한국이 2026년 1월 AI 기본법을 전면 시행해 EU에 이어 세계 두 번째 AI 규제국이 됐다. EU가 고위험 AI 시스템 의무를 16개월 연기한 반면 한국은 예정대로 시행을 강행했다. 한국법은 EU에 비해...</div>
+            <div class="article-meta">
+              <span>대륜법무법인</span>
+              <span>2026-05-15</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#1E3A8A">항공우주·SAF</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://aviationweek.com/aerospace/emerging-technologies/saf-availability-disappointing-fraction-whats-needed" target="_blank" rel="noopener">지속가능항공유 공급량, 필요량의 '실망스러운' 수준에 그쳐</a>
+            </div>
+            <div class="article-summary">글로벌 SAF 생산량이 2026년 약 240만 톤에 달하지만 전체 항공유의 0.8%에 불과하다. SAF 시장은 2025년 37억 달러에서 2026년 58억 달러로 54.5% 성장이 예상된다. 규제 의무화와...</div>
+            <div class="article-meta">
+              <span>Aviation Week</span>
+              <span>2026-05-20</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#1E3A8A">항공우주·SAF</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://news.nate.com/view/20260104n07394" target="_blank" rel="noopener">우주청, 2026년 R&D 9495억 투입…민간 주도 우주경제 가속</a>
+            </div>
+            <div class="article-summary">우주항공청이 2026년 우주 R&D에 9,495억 원을 투입해 민간 주도 우주경제를 가속화한다. 다목적 실용위성 8호, 한국형 위성항법시스템(KPS), 저궤도 위성통신 개발이 추진된다. 발사체·위성·달...</div>
+            <div class="article-meta">
+              <span>네이트뉴스</span>
+              <span>2026-01-04</span>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong style="color:#fff">AI 웹진</strong> · 정보시스템감리 AI 동향</p>
+      <p style="margin-top:8px"><a href="../../archive/">전체 아카이브</a></p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/webzine.js"></script>
+</body>
+</html>
