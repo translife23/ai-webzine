@@ -1,9 +1,11 @@
 {
   "week": "2026-W27",
-  "status": "ARTICLES_CONFIRMED",
+  "status": "PUBLISHED",
   "timeline": {
     "news_search_started": "2026-06-20T08:20:50.078527+00:00",
-    "news_search_completed": "2026-06-20T08:20:50.078527+00:00"
+    "news_search_completed": "2026-06-20T08:20:50.078527+00:00",
+    "publishing_started": "2026-06-23T20:22:14.384703+00:00",
+    "published": "2026-06-23T20:22:14.384720+00:00"
   },
   "topics_covered": [
     "화폐금융",
@@ -19,5 +21,9 @@
     "항공우주·SAF"
   ],
   "articles_count": 22,
-  "confirmed_at": "2026-06-20T08:20:50.078527+00:00"
+  "confirmed_at": "2026-06-20T08:20:50.078527+00:00",
+  "newsletter_sent": 1,
+  "newsletter_failed": 0,
+  "webzine_build": "local_only",
+  "note": "GitHub Pages 배포는 수동 git push 필요"
 }
