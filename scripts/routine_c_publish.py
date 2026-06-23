@@ -26,23 +26,34 @@ from gmail_helper import send_newsletter, send_admin_notification
 from routine_a_news_search import get_week_id
 
 
-def main() -> None:
-    week_id = get_week_id()
-    print(f"[Routine C] 발행 시작: {week_id}")
+def _find_week_to_publish(gh: GitHubHelper) -> str | None:
+    """승인된 미발행 주차를 현재 주차 기준 ±2주 범위에서 탐색한다."""
+    from datetime import timedelta
+    now = datetime.now(timezone.utc)
+    for offset in range(-1, 4):
+        wid = get_week_id(now + timedelta(weeks=offset))
+        approval = gh.read_json(f"data/weekly/{wid}/approval.json")
+        if not approval or not approval.get("approved"):
+            continue
+        status = gh.read_json(f"data/weekly/{wid}/status.json") or {}
+        if status.get("status") == "PUBLISHED":
+            continue
+        return wid
+    return None
 
+
+def main() -> None:
     gh = GitHubHelper()
+
+    week_id = _find_week_to_publish(gh)
+    if not week_id:
+        print("[Routine C] 발행 대기 중인 승인 주차 없음 — 종료")
+        return
+
+    print(f"[Routine C] 발행 시작: {week_id}")
     weekly_path = f"data/weekly/{week_id}"
 
-    # 1. 승인 확인
-    approval = gh.read_json(f"{weekly_path}/approval.json")
-    if not approval or not approval.get("approved"):
-        print("[Routine C] 승인 정보 없음 — 종료")
-        return
-
     status = gh.read_json(f"{weekly_path}/status.json") or {}
-    if status.get("status") == "PUBLISHED":
-        print("[Routine C] 이미 발행됨 — 종료")
-        return
 
     # 상태: PUBLISHING
     gh.write_json(f"{weekly_path}/status.json", {
