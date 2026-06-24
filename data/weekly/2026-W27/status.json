@@ -24,6 +24,6 @@
   "confirmed_at": "2026-06-20T08:20:50.078527+00:00",
   "newsletter_sent": 1,
   "newsletter_failed": 0,
-  "webzine_build": "local_only",
-  "note": "GitHub Pages 배포는 수동 git push 필요"
+  "webzine_build": "github_pages",
+  "webzine_url": "https://translife23.github.io/ai-webzine/issues/2026-W27/"
 }
