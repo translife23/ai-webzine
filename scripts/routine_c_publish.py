@@ -119,7 +119,14 @@ def main() -> None:
         "newsletter_failed": len(result["failed"]),
     }, "auto: 발행 완료")
 
-    # 7. 관리자 알림
+    # 7. GitHub 푸시 (GitHub Pages 자동 배포 트리거)
+    print("[Routine C] GitHub 푸시 중...")
+    try:
+        gh.push()
+    except Exception as exc:
+        print(f"[WARN] git push 실패: {exc}")
+
+    # 8. 관리자 알림
     admin_email = os.environ.get("ADMIN_EMAIL", "")
     if admin_email:
         repo = os.environ.get("GITHUB_REPO", "")

@@ -1,15 +1,15 @@
 """
-GitHub 저장소 읽기/쓰기 헬퍼 — PyGitHub를 통해 JSON/Markdown 파일을 관리한다.
+GitHub 저장소 읽기/쓰기 헬퍼 — 로컬 git 저장소를 통해 파일을 관리한다.
 
-Render.com 무료 티어는 영구 디스크가 없으므로 모든 데이터 파일은 GitHub 저장소에 저장한다.
+Anthropic Cloud 환경에서는 GitHub API 직접 호출이 차단되므로
+로컬 파일 I/O + git commit + git push 방식을 사용한다.
 """
 
 import json
 import os
-import base64
+import subprocess
+from pathlib import Path
 from typing import Any
-
-from github import Github, GithubException
 
 
 class GitHubHelper:
@@ -18,76 +18,88 @@ class GitHubHelper:
         repo_name = os.environ.get("GITHUB_REPO")
         if not token or not repo_name:
             raise EnvironmentError("GITHUB_TOKEN, GITHUB_REPO 환경 변수가 필요합니다.")
-        self._gh = Github(token)
-        self._repo = self._gh.get_repo(repo_name)
+        self._repo_root = Path(__file__).parent.parent
+        self._repo_name = repo_name
+        self._token = token
 
     def read_json(self, path: str) -> dict | None:
-        """저장소의 JSON 파일을 읽어 dict로 반환한다. 없으면 None."""
+        """파일을 읽어 dict로 반환한다. 없으면 None."""
+        full = self._repo_root / path
+        if not full.exists():
+            return None
         try:
-            content = self._repo.get_contents(path)
-            return json.loads(content.decoded_content.decode("utf-8"))
-        except GithubException as e:
-            if e.status == 404:
-                return None
-            raise
+            return json.loads(full.read_text(encoding="utf-8"))
+        except Exception:
+            return None
 
     def write_json(self, path: str, data: dict, message: str | None = None) -> None:
-        """dict를 JSON으로 직렬화하여 저장소에 저장(생성 또는 업데이트)한다."""
-        content_str = json.dumps(data, ensure_ascii=False, indent=2)
-        commit_msg = message or f"auto: update {path}"
-        try:
-            existing = self._repo.get_contents(path)
-            self._repo.update_file(path, commit_msg, content_str, existing.sha)
-        except GithubException as e:
-            if e.status == 404:
-                self._repo.create_file(path, commit_msg, content_str)
-            else:
-                raise
+        """dict를 JSON으로 직렬화하여 저장하고 git commit한다."""
+        full = self._repo_root / path
+        full.parent.mkdir(parents=True, exist_ok=True)
+        full.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+        self._git_commit(path, message or f"auto: update {path}")
 
     def read_text(self, path: str) -> str | None:
-        """저장소의 텍스트 파일을 읽어 문자열로 반환한다. 없으면 None."""
+        """텍스트 파일을 읽어 문자열로 반환한다. 없으면 None."""
+        full = self._repo_root / path
+        if not full.exists():
+            return None
         try:
-            content = self._repo.get_contents(path)
-            return content.decoded_content.decode("utf-8")
-        except GithubException as e:
-            if e.status == 404:
-                return None
-            raise
+            return full.read_text(encoding="utf-8")
+        except Exception:
+            return None
 
     def write_text(self, path: str, text: str, message: str | None = None) -> None:
-        """텍스트를 저장소 파일로 저장(생성 또는 업데이트)한다."""
-        commit_msg = message or f"auto: update {path}"
-        try:
-            existing = self._repo.get_contents(path)
-            self._repo.update_file(path, commit_msg, text, existing.sha)
-        except GithubException as e:
-            if e.status == 404:
-                self._repo.create_file(path, commit_msg, text)
-            else:
-                raise
+        """텍스트를 파일로 저장하고 git commit한다."""
+        full = self._repo_root / path
+        full.parent.mkdir(parents=True, exist_ok=True)
+        full.write_text(text, encoding="utf-8")
+        self._git_commit(path, message or f"auto: update {path}")
 
     def write_html(self, path: str, html: str, message: str | None = None) -> None:
-        """HTML 파일을 저장소에 저장한다."""
+        """HTML 파일을 저장한다."""
         self.write_text(path, html, message)
 
     def list_dir(self, path: str) -> list[str]:
         """디렉토리 내 항목 이름 목록을 반환한다. 없으면 빈 리스트."""
-        try:
-            contents = self._repo.get_contents(path)
-            if isinstance(contents, list):
-                return [c.name for c in contents]
+        full = self._repo_root / path
+        if not full.exists() or not full.is_dir():
             return []
-        except GithubException as e:
-            if e.status == 404:
-                return []
-            raise
+        return [p.name for p in full.iterdir()]
 
     def path_exists(self, path: str) -> bool:
-        """저장소에 파일/디렉토리가 존재하는지 확인한다."""
-        try:
-            self._repo.get_contents(path)
-            return True
-        except GithubException as e:
-            if e.status == 404:
-                return False
-            raise
+        """파일/디렉토리가 존재하는지 확인한다."""
+        return (self._repo_root / path).exists()
+
+    def push(self) -> None:
+        """모든 커밋을 원격 저장소에 푸시한다."""
+        result = subprocess.run(
+            ["git", "push", "-u", "origin", "HEAD"],
+            cwd=self._repo_root,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            raise RuntimeError(f"git push 실패: {result.stderr}")
+        print(f"[GitHubHelper] push 완료: {result.stdout.strip() or result.stderr.strip()}")
+
+    def _git_commit(self, path: str, message: str) -> None:
+        """단일 파일을 git add 후 commit한다."""
+        subprocess.run(
+            ["git", "add", path],
+            cwd=self._repo_root,
+            check=True,
+            capture_output=True,
+        )
+        result = subprocess.run(
+            ["git", "commit", "-m", message],
+            cwd=self._repo_root,
+            capture_output=True,
+            text=True,
+        )
+        if result.returncode != 0:
+            # 변경 사항 없으면 커밋 건너뜀
+            if "nothing to commit" in result.stdout or "nothing to commit" in result.stderr:
+                pass
+            else:
+                raise RuntimeError(f"git commit 실패: {result.stderr}")
