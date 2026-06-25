@@ -1,13 +1,14 @@
 {
   "week": "2026-W26",
-  "status": "PUBLISHED",
+  "status": "DRAFT_READY",
   "timeline": {
     "news_search_started": "2026-06-25T04:51:01.319656+00:00",
     "news_search_completed": "2026-06-25T04:51:01.319656+00:00",
     "publishing_started": "2026-06-25T01:10:00.000000+00:00",
     "theme_plan_submitted": "2026-06-25T00:11:40.906794+00:00",
     "published": "2026-06-25T20:00:00.000000+00:00",
-    "articles_confirmed": "2026-06-25T04:51:01.319656+00:00"
+    "articles_confirmed": "2026-06-25T04:51:01.319656+00:00",
+    "draft_ready": "2026-06-25T05:11:55.140781+00:00"
   },
   "topics_covered": [
     "농업·푸드테크",
@@ -27,5 +28,7 @@
   "newsletter_sent": 1,
   "newsletter_failed": 0,
   "webzine_build": "github_pages",
-  "webzine_url": "https://translife23.github.io/ai-webzine/issues/2026-W26/"
+  "webzine_url": "https://translife23.github.io/ai-webzine/issues/2026-W26/",
+  "draft_report": "data/weekly/2026-W26/draft-report.md",
+  "research_topic": "VLM 기술의 공공·산업 분야 도입 현황과 감리 시사점"
 }
