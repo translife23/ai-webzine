@@ -1,12 +1,12 @@
 {
   "week": "2026-W26",
-  "status": "PUBLISHING",
+  "status": "PUBLISHED",
   "timeline": {
     "news_search_started": "2026-06-13T08:15:19.142624+00:00",
     "news_search_completed": "2026-06-13T08:15:19.142624+00:00",
-    "publishing_started": "2026-06-25T01:07:01.781923+00:00",
-    "published": "2026-06-13T14:11:32.493700+00:00",
-    "theme_plan_submitted": "2026-06-25T00:11:40.906794+00:00"
+    "publishing_started": "2026-06-25T01:10:00.000000+00:00",
+    "theme_plan_submitted": "2026-06-25T00:11:40.906794+00:00",
+    "published": "2026-06-25T01:14:50.296676+00:00"
   },
   "topics_covered": [
     "화폐금융",
@@ -24,5 +24,7 @@
   "articles_count": 22,
   "confirmed_at": "2026-06-13T08:15:19.142624+00:00",
   "newsletter_sent": 1,
-  "newsletter_failed": 0
+  "newsletter_failed": 0,
+  "webzine_build": "github_pages",
+  "webzine_url": "https://translife23.github.io/ai-webzine/issues/2026-W26/"
 }
