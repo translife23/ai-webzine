@@ -5,6 +5,7 @@ SMTP 포트 차단 환경(Anthropic Cloud)에서도 HTTPS(443)로 정상 동작.
 
 import os
 import base64
+from email.header import Header
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -41,7 +42,7 @@ def send_admin_notification(to: str, subject: str, body: str) -> None:
     try:
         sender = os.environ["GMAIL_SENDER_ADDRESS"]
         msg = MIMEText(body, "plain", "utf-8")
-        msg["Subject"] = subject
+        msg["Subject"] = Header(subject, "utf-8")
         msg["From"] = sender
         msg["To"] = to
         token = _get_access_token()
@@ -69,7 +70,7 @@ def send_newsletter(recipients: list[str], subject: str, html_body: str) -> dict
     for recipient in recipients:
         try:
             msg = MIMEMultipart("alternative")
-            msg["Subject"] = subject
+            msg["Subject"] = Header(subject, "utf-8")
             msg["From"] = sender
             msg["To"] = recipient
             msg.attach(MIMEText(html_body, "html", "utf-8"))
