@@ -1,12 +1,12 @@
 {
   "week": "2026-W26",
-  "status": "PUBLISHING",
+  "status": "PUBLISHED",
   "timeline": {
     "news_search_started": "2026-06-25T04:51:01.319656+00:00",
     "news_search_completed": "2026-06-25T04:51:01.319656+00:00",
     "publishing_started": "2026-06-25T01:10:00.000000+00:00",
     "theme_plan_submitted": "2026-06-25T00:11:40.906794+00:00",
-    "published": "2026-06-25T20:00:00.000000+00:00",
+    "published": "2026-06-25T05:38:05.467673+00:00",
     "articles_confirmed": "2026-06-25T04:51:01.319656+00:00",
     "draft_ready": "2026-06-25T05:11:55.140781+00:00",
     "approved": "2026-06-25T05:14:40.375016+00:00"
