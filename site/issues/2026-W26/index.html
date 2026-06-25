@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EU AI법 개정과 한국 AI 기본법 시행: 정보시스템 감리 환경의 새로운 컴플라이언스 의무 — AI 웹진 2026년 제26호</title>
+  <title>VLM 기술의 공공·산업 분야 도입 현황과 감리 시사점 — AI 웹진 2026년 제26호</title>
   <link rel="stylesheet" href="../../assets/css/webzine.css">
 </head>
 <body>
@@ -31,74 +31,96 @@
       <section>
         <div class="section-label">기획 보고서</div>
         <div class="report-card">
-          <div class="report-title">EU AI법 개정과 한국 AI 기본법 시행: 정보시스템 감리 환경의 새로운 컴플라이언스 의무</div>
+          <div class="report-title">VLM 기술의 공공·산업 분야 도입 현황과 감리 시사점</div>
           <details>
             <summary>보고서 전문 보기 ▾</summary>
             <div class="report-body">
-              <h1>EU AI법 개정과 한국 AI 기본법 시행: 정보시스템 감리 환경의 새로운 컴플라이언스 의무</h1>
+              <h1>VLM 기술의 공공·산업 분야 도입 현황과 감리 시사점</h1>
 
-<p><strong>테마 영역:</strong> AI 정책 & 거버넌스</p>
-<p><strong>분석 관점:</strong> 정보시스템 감리사·IT 감사 전문가 실무 관점에서의 규제 리스크와 대응 전략</p>
+<p><strong>테마 영역:</strong> AI 기술 & 인프라</p>
+<p><strong>분석 관점:</strong> VLM 개념·주목 배경 / 현재 수준과 발전 방향 / 공공·산업 도입 사례 / 정보시스템 감리 시사점</p>
 
 <p>---</p>
 
 <h2>1. 배경지식</h2>
 
-<p>AI 규제는 크게 두 가지 축으로 수렴하고 있다. 하나는 2024년 8월 발효된 <strong>EU AI법(EU AI Act)</strong>이고, 다른 하나는 2026년 1월 전면 시행된 <strong>한국 AI 기본법</strong>이다. 두 법제는 독립적으로 발전했지만 고위험 AI 시스템에 대한 사전 규제, 투명성·설명 가능성 의무, 인간 감독(human oversight) 요건이라는 공통 기둥 위에 서 있다.</p>
+<h3>1.1 VLM이란 무엇인가</h3>
 
-<p>EU AI법은 AI 시스템을 위험도에 따라 ① 허용불가(Unacceptable), ② 고위험(High-Risk), ③ 제한 위험, ④ 최소 위험 4단계로 분류한다. 금융·의료·인프라·교육·채용 등 사회적 영향이 큰 분야에 활용되는 AI는 '고위험'으로 분류돼 의무적인 적합성 평가(Conformity Assessment), AI 모델 카드(Model Card) 제출, 로그 보존, 인간 감독 체계 구축이 요구된다.</p>
+<p><strong>비전-언어 모델(Vision-Language Model, VLM)</strong> 은 텍스트와 이미지(나아가 영상·음성 등 다양한 모달리티)를 동시에 이해하고 추론하는 멀티모달 AI 모델이다. 기존의 대규모 언어 모델(LLM)이 텍스트 입력만을 처리하는 데 반해, VLM은 "이미지를 보고, 내용을 이해하며, 맥락에 맞는 텍스트로 응답"하는 능력을 갖춘다.</p>
 
-<p>한국 AI 기본법은 2025년 12월 국회를 통과해 2026년 1월 전면 시행됐다. '고영향 AI'를 별도 정의하고 설명 의무·사전 영향평가·사후 감사 체계를 규정하며, 이는 공공·금융·의료·교육 분야 AI 시스템을 도입·운영하는 조직에 직접 적용된다. 정보시스템 감리사 관점에서 두 법제는 기존 감리 체크리스트를 AI 거버넌스 영역으로 확장하는 법적 근거이자 새로운 감리 의뢰 수요의 원천이다 (출처: 리스크 인텔리전스 리뷰, 2026년 4월).</p>
+<p>핵심 구조는 세 요소로 구성된다. ① <strong>비전 인코더(Vision Encoder):</strong> ResNet, ViT 등 CNN·트랜스포머 기반 이미지 특징 추출기. ② <strong>언어 모델(LLM 백본):</strong> GPT, LLaMA 등 사전학습된 대형 언어 모델. ③ <strong>크로스모달 정렬 레이어(Cross-Modal Alignment):</strong> 이미지 임베딩과 텍스트 임베딩 공간을 연결하는 프로젝션 모듈.</p>
+
+<p>대표 모델로는 구글의 Gemini 2.5 Pro·Flash, OpenAI의 GPT-4o, 오픈소스 진영의 Qwen2.5-VL-72B·Gemma 3·LLaVA 시리즈 등이 있다.</p>
+
+<h3>1.2 LLM과의 차별점: IT 감리 관점의 의미</h3>
+
+<p>정보시스템 감리 관점에서 VLM의 핵심 차별점은 <strong>비정형 시각 데이터의 자동 처리 능력</strong>이다. 공공기관과 산업 현장에 산재한 이미지, 도면, 스캔 문서, CCTV 영상, 의료 영상 등 기존 LLM이 처리할 수 없었던 데이터를 AI가 직접 분석·판단할 수 있게 된다. 이는 감리 대상 시스템의 범위와 성격을 근본적으로 변화시키는 요인이다.</p>
+
+<ul>
+<li><strong>처리 데이터:</strong> 텍스트 → 텍스트+이미지+영상+음성(멀티모달)</li>
+<li><strong>적용 분야:</strong> 문서 분석(OCR 초월) → 영상 이해·제조 검사·의료 진단·자율행동</li>
+<li><strong>감리 위험:</strong> 단순 출력 오류 → 시각적 판단 오류(생명·재산 직결), 할루시네이션의 물리적 결과</li>
+</ul>
 
 <p>---</p>
 
 <h2>2. 최근 3년간 동향 (2023~2026)</h2>
 
-<p><strong>2023년:</strong> EU AI법이 유럽의회를 통과(2023년 6월)하며 글로벌 AI 규제의 기준점이 확정됐다. 생성형 AI 급부상으로 범용 AI 모델(GPAI)에 대한 별도 조항이 추가됐다. 한국은 「인공지능 산업 육성 및 신뢰 기반 조성에 관한 법률」 초안이 공론화되며 입법 논의가 본격화됐다.</p>
+<h3>2023년: VLM 실험 시대</h3>
 
-<p><strong>2024년:</strong> EU AI법이 2024년 8월 발효됐다. 금지 AI 관행 조항은 2025년 2월부터 적용, GPAI 모델 의무는 2025년 8월부터 적용됐다. 한국 AI 기본법은 2024년 12월 국회 본회의를 통과해 2025년 6월 공포됐다. 금융감독원은 금융권 AI 거버넌스 모범규준을 발표하며 AI 모델 리스크 관리 체계화를 요구했다.</p>
+<p>GPT-4V(비전)가 출시되며 VLM이 대중에게 처음 알려졌다. 동시에 LLaVA, MiniGPT-4 등 오픈소스 VLM이 등장해 연구·실험이 활성화됐다. 주요 용도는 이미지 설명(Image Captioning)과 시각적 질의응답(VQA)에 한정됐다.</p>
 
-<p><strong>2025년:</strong> EU AI 과학패널(Scientific Panel)과 자문포럼(Advisory Forum)이 구성됐다. AI 오피스(AI Office)가 GPAI 모델 행동강령 초안을 발표했다. 한국은 과학기술정보통신부 주도로 AI 영향평가 가이드라인을 배포했다. AI 기본법 시행령 제정과 함께 '고영향 AI' 판단 기준이 구체화됐다.</p>
+<h3>2024년: 멀티모달 경쟁과 기반 구축</h3>
 
-<p><strong>2026년 상반기:</strong> 한국 AI 기본법이 2026년 1월 전면 시행됐다. EU는 2026년 5월 7일 AI법 개정(Omnibus)에 정치적 합의를 이뤄 독립형 고위험 AI 시스템의 준수 기한을 2027년 12월로, 임베디드형은 2028년 8월로 연장했다. 2026년 6월 1일에는 EU AI 과학패널·자문포럼이 공식 발족하며 집행 준비에 들어갔다. 동시에 AI가 생성한 비동의 친밀 이미지(NCII) 및 아동 성착취 콘텐츠 생성 AI가 신규 금지 목록에 추가됐다 (출처: Global Policy Watch, 2026년 6월; 전국인력신문, 2026년 6월).</p>
+<p>구글 Gemini 1.0(멀티모달 네이티브)이 출시됐고, Claude 3이 Vision 기능을 갖추었다. 산업 현장의 POC(Proof of Concept)가 시작됐으며, 의료·제조 분야의 VLM 적용 연구가 본격화됐다. EU AI법에서 고위험 AI 시스템 중 '안전 구성요소'에 VLM 기반 자율판단 시스템이 포함될 수 있다는 규제 논의가 시작됐다.</p>
+
+<h3>2025년: 상용화 가속과 에지 배포</h3>
+
+<p>Gemini 2.0·GPT-4o, Qwen2.5-VL이 출시되며 추론 속도와 정확도가 대폭 향상됐다. NVIDIA TensorRT-LLM이 에지 디바이스에서 VLM 추론 레이턴시를 2024년 대비 60% 단축시켰다. 제조 현장 로봇 비전·의료 영상 분석·공공 문서 자동화에 VLM이 본격 도입되기 시작했다. 한국에서도 보건복지부 연구사업으로 삼성서울병원, 가천대 길병원, 동아대병원과 VLM 기반 의료 서비스 POC가 수행됐다.</p>
+
+<h3>2026년: 표준 기능화와 공공 배포</h3>
+
+<p>2026년 현재 VLM은 주요 산업용 로봇 제조사의 컨트롤러에 기본 탑재될 수준에 이르렀다. Gemini Robotics VLA·RT-2-X·OpenVLA-2는 씬(scene)을 파악하고 언어 명령을 해석해 200ms 이내에 정밀 조작 동작을 수행한다. 비전-언어 모델 시장 규모는 연평균 38% 성장 중이며 2034년까지 폭발적 확대가 전망된다. 공공 부문에서는 재난대응, 인프라 관리, 행정 문서 처리, 의료진단 보조 등에서 본격 배포가 이루어지고 있다.</p>
 
 <p>---</p>
 
 <h2>3. 최근 주목받는 이유</h2>
 
-<p>2026년이 사실상의 'AI 규제 원년'으로 자리잡았기 때문이다. 한국 AI 기본법 시행과 EU AI법 집행 기구 공식 출범이 동시에 이뤄지며, 글로벌 공급망을 통해 국내 기업·공공기관도 EU 규제의 간접 영향을 받게 됐다. 특히 한국 AI 기본법의 '고영향 AI 사업자' 지정이 본격화되면서, 공공·금융·의료 분야의 AI 시스템은 정기 감리 대상으로 편입될 가능성이 높다. 정보시스템 감리사에게는 새로운 감리 영역이 열리는 동시에, 기존 감리 방법론을 AI 특성에 맞게 재설계해야 하는 과제가 주어졌다. AI 모델 카드 제출, 로그 보존, 알고리즘 감사(Algorithm Audit) 등이 감리 체크리스트에 편입되는 것은 시간문제다 (출처: 리스크 인텔리전스 리뷰, 2026년 4월).</p>
+<p>VLM이 2026년 현재 특별히 주목받는 배경은 세 가지다.</p>
+
+<p><strong>첫째, AI의 '눈(眼)'을 갖게 된 것의 파급력.</strong> 인간 업무의 상당 부분이 시각 정보 처리를 포함한다. 도면 검토, 의무기록 판독, CCTV 모니터링, 제품 외관 검사 등이 VLM으로 자동화 가능해지면서 공공·산업 분야 AX(AI 전환)의 실질적 가속제가 되고 있다.</p>
+
+<p><strong>둘째, 정부와 공공기관의 도입 본격화.</strong> 중국 정부의 '차세대 AI 개발 계획', 미국 공공기관의 재난·인프라 관리 VLM 도입, 한국 과기부의 AI 기본법 시행과 의료 AI 예산 2.5배 증가(930억→2,478억 원)가 VLM의 공공 시장 확대를 이끌고 있다.</p>
+
+<p><strong>셋째, 안전·신뢰성에 대한 규제 압박 증대.</strong> EU AI법이 2026년 8월 2일 전면 적용되며, VLM 기반 공공 시스템은 '고위험 AI' 분류를 받을 가능성이 높아졌다. 한국의 AI기본법도 고영향 AI에 대한 투명성 의무를 즉시 적용 중이다. 규제 준수를 위한 VLM 검증 체계 수요가 급증하고 있다.</p>
 
 <p>---</p>
 
 <h2>4. 주요 쟁점</h2>
 
-<h3>쟁점 1: 고위험 AI 분류 기준의 적정성 — 너무 넓은가, 너무 좁은가?</h3>
+<h3>쟁점 1: VLM의 공공 안전 시스템 적용 — 신뢰성과 책임 소재</h3>
 
-<p><strong>주장 A (광범위한 분류 지지):</strong></p>
-<ul>
-<li>AI가 인간의 삶에 미치는 파급력을 고려하면 금융·의료·채용·공공 분야 AI를 선제적으로 고위험으로 분류해 엄격히 규제하는 것이 타당하다. 규제 사각지대를 최소화해 피해 발생 전 예방적 감독이 가능하다.</li>
-<li>EU AI법 실무 경험에서 고위험 분류가 확실한 분야(채용 AI, 신용평가 AI 등)는 실제로 알고리즘 편향 문제가 다수 보고됐으며, 사전 적합성 평가가 피해를 차단한 사례가 존재한다.</li>
-</ul>
+<p>VLM이 재난대응·의료진단·인프라 관리 등 안전 직결 공공 분야에 배포될 때 오류의 책임 주체와 신뢰성 기준이 모호하다.</p>
 
-<p><strong>주장 B (좁은 분류 지지 / 혁신 친화적 접근):</strong></p>
-<ul>
-<li>지나치게 광범위한 고위험 분류는 AI 혁신을 저해하고 중소·스타트업에 과도한 준법 비용을 부과한다. EU AI법 옴니버스 개정이 일정을 최대 16개월 연장한 것 자체가 현행 기준이 지나치게 광범위함을 방증한다.</li>
-<li>위험 수준에 비례한 규제(Proportionality)가 원칙이어야 하며, 실제 피해 가능성이 낮은 시스템까지 동일한 적합성 평가를 요구하는 것은 비효율적이다.</li>
-</ul>
+<p><strong>주장 A (적극 도입론):</strong> VLM 기반 AI는 24시간 실시간 감시가 가능하고, 인간 전문가의 번아웃·주의력 저하를 보완한다. 의료 영상 분석에서 VLM이 탐지한 종양의 정확도가 숙련 방사선과 의사 수준에 근접하고 있으며, 공공 인프라 손상 탐지에서 인간 점검 대비 90% 이상의 정확도를 기록한 사례가 있다. 인명 구조와 공공 안전 향상을 위해 기술적 불완전성보다 도입의 공익이 더 크다는 입장이다.</p>
 
-<h3>쟁점 2: AI 알고리즘 감사의 정보시스템 감리 제도 편입 방식</h3>
+<p><strong>주장 B (신중론):</strong> VLM의 시각적 할루시네이션(존재하지 않는 물체를 인식하거나 실제 위협을 놓치는 오류)이 안전사고로 이어질 수 있다. AI 책임에 관한 법·규정이 미비한 상태에서 오류 발생 시 책임 소재가 불분명하다. 적대적 공격(adversarial patch)에 취약한 VLM이 보안 카메라·자율판단 시스템에 사용될 경우 악의적 조작에 노출될 위험이 있다.</p>
 
-<p><strong>주장 A (정보시스템 감리 체계에 통합):</strong></p>
-<ul>
-<li>기존 정보시스템 감리 인프라(감리 전문법인, 자격 체계, 감리 기준)를 활용하면 별도 감사 체계를 구축하는 것보다 비용 효율적이다. 감리사가 AI 모델 카드 검증, 학습 데이터 편향 검사, 출력 로그 감사를 수행하도록 자격 기준을 확장하는 것이 현실적이다.</li>
-<li>한국 AI 기본법 시행령에서 이미 '정보시스템 감리'를 AI 사후 관리 수단 중 하나로 언급하고 있어 제도적 연계 근거가 존재한다.</li>
-</ul>
+<h3>쟁점 2: 오픈소스 VLM 대 독점 VLM — 공공·산업 도입 전략의 선택</h3>
 
-<p><strong>주장 B (AI 전문 감사 별도 제도화):</strong></p>
-<ul>
-<li>알고리즘 편향·공정성·설명 가능성 평가는 전통적 정보시스템 감리와 본질적으로 다른 전문성(머신러닝 이론, 통계, 윤리)을 요구한다. 감리 체계에 무리하게 통합하면 형식적 체크박스 감사로 전락할 위험이 있다.</li>
-<li>별도의 'AI 감사사(AI Auditor)' 자격을 신설하고, 독립적인 알고리즘 감사 기관을 지정해 실질적인 감독 역량을 키우는 것이 장기적으로 바람직하다.</li>
-</ul>
+<p>공공기관과 기업이 VLM을 도입할 때 클라우드 기반 독점 API(Gemini, GPT-4o)를 쓸 것인가, 온프레미스 오픈소스(Qwen2.5-VL, LLaVA)를 자체 운영할 것인가의 선택이 핵심 쟁점이다.</p>
+
+<p><strong>주장 A (독점 API 선호론):</strong> 독점 모델이 성능·최신성·지원 면에서 우월하다. 클라우드 SaaS 형태로 도입 시 유지보수 부담이 없고 빠른 업데이트가 가능하다. 특히 중소 규모 공공기관은 자체 GPU 인프라 없이도 최신 VLM을 활용할 수 있다.</p>
+
+<p><strong>주장 B (오픈소스 자체 운영론):</strong> 의료기록·민원 데이터 등 민감 정보를 외부 클라우드에 전송하는 것은 개인정보보호법·의료법 위반 위험이 있다. 오픈소스 VLM(Qwen2.5-VL-72B 등)이 독점 모델과의 성능 차이를 빠르게 좁히고 있어 자체 운영 유인이 커지고 있다. 공공 데이터 주권과 AI 자립 측면에서 국내 서버 기반 운영이 바람직하다.</p>
+
+<h3>쟁점 3: 정보시스템 감리의 VLM 검증 기준 부재</h3>
+
+<p>기존 정보시스템 감리 기준은 VLM의 고유 특성(시각적 추론, 멀티모달 입력, 확률적 출력)을 검증하는 체계를 갖추지 못하고 있다.</p>
+
+<p><strong>주장 A (현행 기준 적용 확장론):</strong> AI 시스템 감리에서 기존의 시스템 신뢰성·보안·성능 기준을 VLM에도 적용하되, VLM 특성에 맞춰 시각적 입력 검증 항목을 추가하는 방식으로 기준을 확장하면 충분하다. 과도한 VLM 전용 규정 신설은 기업·기관의 혁신을 저해할 수 있다.</p>
+
+<p><strong>주장 B (VLM 전용 감리 기준 필요론):</strong> VLM은 동일 입력에도 출력이 비결정적이며, 이미지 품질·해상도·각도에 따라 결과가 급변한다. 할루시네이션·적대적 공격·편향된 학습 데이터 등 LLM과는 다른 위험 요인이 존재한다. 공공·의료·금융 분야의 VLM 도입에는 전용 테스트 데이터셋, 불확실성 정량화, 인간 감독(Human-in-the-Loop) 의무화 등 별도 기준이 필요하다.</p>
 
 <p>---</p>
 
@@ -107,18 +129,24 @@
 <h3>단기 전망 (6개월 이내, 2026년 하반기)</h3>
 
 <ul>
-<li><strong>한국 AI 기본법 하위 규정 확정:</strong> 고영향 AI 지정 고시, 영향평가 세부 기준, 신고 의무 이행 절차가 2026년 3분기 중 발표될 예정이다. 공공기관 AI 도입 심의 가이드라인이 강화되며 감리 의뢰 증가가 예상된다.</li>
-<li><strong>EU AI 과학패널 첫 집행 권고 발표:</strong> 2026년 6월 발족한 과학패널이 GPAI 모델 행동강령 최종본과 첫 집행 권고를 하반기 중 발표할 예정이다. 국내 AI 서비스 기업의 EU 수출 조건에 영향을 줄 수 있다.</li>
-<li><strong>금융·공공 분야 AI 감리 시범 사업:</strong> 금융감독원과 행정안전부가 AI 내재 정보시스템에 대한 감리 시범 적용을 추진 중이다. 감리 방법론 초안이 연내 공개될 것으로 보인다.</li>
+<li>EU AI법 2026년 8월 2일 전면 적용으로 VLM 기반 고위험 AI 시스템에 적합성 평가·기술문서 제출 의무가 부과된다.</li>
+<li>한국 AI기본법 고영향 AI 규제 유예(1년 이상)가 종료될 경우 공공 VLM 시스템의 투명성 의무 이행이 가시화된다.</li>
+<li>산업용 로봇 VLM 컨트롤러 표준 탑재가 일반화되며 제조 현장 품질검사·예지정비에서 VLM 채택이 급증할 전망이다.</li>
+<li>의료 분야에서 식품의약품안전처의 VLM 기반 의료 AI 소프트웨어 허가 사례가 본격 등장할 것으로 예상된다.</li>
 </ul>
 
-<h3>중기 전망 (1~3년, 2027~2028년)</h3>
+<h3>중기 전망 (1~3년, 2027~2029)</h3>
 
 <ul>
-<li><strong>EU 고위험 AI 준수 마감(2027년 12월/2028년 8월):</strong> 이 시점을 전후로 국내 기업·공공기관의 EU 수출 AI 시스템에 대한 적합성 평가 수요가 급증할 것이다. 국제 인증·감리 역량을 갖춘 전문 기관이 희소 자원이 된다.</li>
-<li><strong>AI 모델 카드 감리 표준화:</strong> ISO/IEC JTC1 SC42(AI 국제표준) 및 한국 TTA를 통해 AI 모델 카드 양식과 감리 기준이 국제 표준으로 수렴될 전망이다. 감리사 보수교육에 AI 감사 역량 과목 의무화가 논의될 것이다.</li>
-<li><strong>민간 알고리즘 감사 시장 형성:</strong> 글로벌 4대 회계법인과 국내 감리 전문법인이 AI 거버넌스 컨설팅·감사 서비스를 출시하며 신규 시장이 형성될 것이다. 정보시스템 감리사의 역할이 '시스템 적합성 확인자'에서 'AI 신뢰성 보증자'로 확대되는 전환점이 이 기간에 가시화된다.</li>
+<li>VLM이 공공 행정 문서 처리(다국어 민원서류, 스캔 문서 인식)에 표준 도구로 정착하고, 공공 조달 시스템에 VLM 검증 요건이 포함될 것이다.</li>
+<li>정보시스템 감리 분야에서 <strong>멀티모달 AI 감리 전문 자격·체계</strong>가 국내외에서 신설될 가능성이 높다. 현행 소프트웨어 감리 기준이 VLM 검증 항목(시각 추론 오류율, 적대적 입력 내성, 불확실성 정량화)을 포함하도록 개정될 전망이다.</li>
+<li>국내 공공기관의 온프레미스 VLM 도입 수요가 증가하면서 정부의 공공 AI 인프라(AI 컴퓨팅 센터) 투자가 가속화될 것이다.</li>
+<li>국산 VLM(네이버 HyperCLOVA X Vision, ETRI 멀티모달 AI 등)의 공공 조달 경쟁력이 강화될 전망이다.</li>
 </ul>
+
+<p>---</p>
+
+<p><em>본 보고서는 공개된 뉴스, 학술 자료, 기관 발표를 기반으로 작성됐습니다. 출처: arXiv(2502.16361), Dextralabs VLM 벤치마크 2026, NVIDIA TensorRT-LLM, EU AI법 옴니버스(2026.05.07), 한국 AI기본법(2026.01.22 시행), 보건복지부 VLM 의료 POC, 머니투데이·헬로티 등 국내 언론.</em></p>
 
             </div>
           </details>
@@ -138,12 +166,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.pymnts.com/cbdc/2026/cbdc-debate-signals-privacy-fault-line-in-digital-moneys-future" target="_blank" rel="noopener">CBDC 논쟁이 드러내는 디지털 화폐의 프라이버시 단층선</a>
+              <a href="https://www.pymnts.com/cryptocurrency/2026/bank-regulators-push-stablecoin-rules-while-warning-on-ai-risks/" target="_blank" rel="noopener">은행 규제당국, AI 리스크 경고하며 스테이블코인 규제 추진</a>
             </div>
-            <div class="article-summary">각국 중앙은행의 CBDC 파일럿이 본격화되며 프라이버시 논쟁이 확산되고 있다. 미국은 GENIUS법으로 스테이블코인의 통합 법적 프레임워크를 마련했다. EU MiCA 규제는 암호자산 스테이블코인 기준을...</div>
+            <div class="article-summary">은행 규제당국이 AI 리스크에 대한 경고와 함께 스테이블코인 규제를 추진하고 있다. 에이전틱 AI가 금융서비스·자산운용·상거래를 급속히 재편하는 가운데, 2026년 금융 환경은 규제의 분기점을 맞이했다....</div>
             <div class="article-meta">
-              <span>PYMNTS</span>
-              <span>2026-06-05</span>
+              <span>PYMNTS.com</span>
+              <span>2026-06-20</span>
             </div>
           </div>
           
@@ -155,12 +183,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.news1.kr/finance/blockchain-fintech/6107220" target="_blank" rel="noopener">한은 CBDC·원화 스테이블코인 다 쥐는 은행…'디지털 원화' 주도권 굳히나</a>
+              <a href="https://www.etoday.co.kr/news/view/2596482" target="_blank" rel="noopener">안도걸 '원화 스테이블코인 제도화 속도…여의치 않으면 단독 원 구성'</a>
             </div>
-            <div class="article-summary">한국은행 CBDC와 원화 스테이블코인이 시중은행 중심으로 발행될 전망이다. 프로젝트 한강 2단계에 경남·아이엠뱅크가 합류해 9개 은행이 참여한다. 은행 중심 디지털 원화 구조로 비은행권의 시장 진입이 제한될...</div>
+            <div class="article-summary">원화 스테이블코인 제도화 논의가 속도를 내며 한국은행·국회·핀테크 업계가 본격 협의에 나서고 있다. CBDC와 민간 스테이블코인 병행 여부가 핵심 쟁점으로 부상했다. 준비자산·상환 장치·은행과 핀테크의 역할...</div>
             <div class="article-meta">
-              <span>뉴스1</span>
-              <span>2026-03-23</span>
+              <span>이투데이</span>
+              <span>2026-06-18</span>
             </div>
           </div>
           
@@ -172,12 +200,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://medium.com/technologai/ai-driven-trading-hits-a-27-billion-inflection-point-and-the-risks-are-scaling-with-it-d684b513c6a4" target="_blank" rel="noopener">AI 주도 트레이딩 270억 달러 변곡점 — 리스크도 함께 확대</a>
+              <a href="https://www.bloomberg.com/news/articles/2026-06-24/new-hedge-funds-are-using-ai-bots-to-rival-industry-giants" target="_blank" rel="noopener">신생 헤지펀드, AI 봇으로 업계 거물에 도전장</a>
             </div>
-            <div class="article-summary">AI 주도 자동화 트레이딩 시장이 270억 달러 규모로 성장하며 변곡점을 맞았다. 알고리즘 전략이 주식 거래량의 60~70%를 차지하는 시대가 도래했다. 머신러닝 기반 하이브리드 시스템이 주류로 자리잡았으나...</div>
+            <div class="article-summary">AI가 헤지펀드 업계의 진입장벽을 무너뜨리며 소형 부티크 펀드가 거대 매크로 투자사와 경쟁 가능하게 됐다. 생성형 AI를 활용한 펀드는 미채택 펀드보다 연간 3~5% 높은 수익률을 기록하는 것으로 나타났다....</div>
             <div class="article-meta">
-              <span>Medium (TechnologAI)</span>
-              <span>2026-03-15</span>
+              <span>Bloomberg</span>
+              <span>2026-06-24</span>
             </div>
           </div>
           
@@ -189,12 +217,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://riskreview.kr/View.aspx?No=4033771" target="_blank" rel="noopener">인공지능(AI) 거버넌스의 전환: 2026년의 4가지 핵심 변화</a>
+              <a href="https://www.fnnews.com/news/202606250329123367" target="_blank" rel="noopener">AI 빅테크, 6월 한 달 시총 4169조원 사라져…'막대한 투자 감당할까'</a>
             </div>
-            <div class="article-summary">한국 AI 기본법이 2026년 1월 시행되며 금융권 AI 거버넌스가 의무화 단계에 진입했다. 자발적 가이드라인에서 강제적 준법 기준으로 전환이 전 산업에 걸쳐 가속화되고 있다. AI 모델 카드 제출이 감사 시...</div>
+            <div class="article-summary">AI 빅테크 시가총액이 6월 한 달 만에 4169조 원 증발하며 투자 과열 우려가 커지고 있다. 막대한 AI 인프라 투자가 실제 수익으로 이어질 수 있는지 의문이 제기되고 있다. 국내 시장에서도 AI·반도체...</div>
             <div class="article-meta">
-              <span>리스크 인텔리전스 리뷰</span>
-              <span>2026-04-10</span>
+              <span>파이낸셜뉴스</span>
+              <span>2026-06-25</span>
             </div>
           </div>
           
@@ -206,12 +234,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.eweek.com/news/humanoid-robots-work-mode-2026-apac-china/" target="_blank" rel="noopener">중국 2026 계획: 휴머노이드 로봇 1만 대를 실제 현장에 투입</a>
+              <a href="https://www.techtimes.com/articles/318805/20260621/automate-2026-opens-monday-nvidia-pavilion-marks-humanoid-robot-shift-production.htm" target="_blank" rel="noopener">Automate 2026 개막: NVIDIA 파빌리온, 휴머노이드 로봇 양산 전환을 알리다</a>
             </div>
-            <div class="article-summary">중국이 2026년 휴머노이드 로봇 1만 대를 실제 산업 현장에 투입하는 계획을 추진 중이다. 어질리티 로보틱스는 도요타 캐나다와 RaaS 계약을 체결하고 물류 현장에 배치했다. 로보테라는 중국 우편·물류 현장...</div>
+            <div class="article-summary">Automate 2026이 시카고에서 개막해 5만여 명이 참가한 역대 최대 규모를 기록했다. NVIDIA 스폰서의 '휴머노이드 로봇 파빌리온'이 처음 등장해 양산 전환의 신호탄을 쐈다. 피지컬 AI(시연 기반...</div>
             <div class="article-meta">
-              <span>eWeek</span>
-              <span>2026-05-20</span>
+              <span>TechTimes</span>
+              <span>2026-06-22</span>
             </div>
           </div>
           
@@ -223,12 +251,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://industryjournal.co.kr/news/245200" target="_blank" rel="noopener">[이슈기획] 휴머노이드 로봇, '피지컬 AI' 만나 산업 자동화 새 해법으로</a>
+              <a href="https://www.mt.co.kr/industry/2026/06/24/2026061916031439290" target="_blank" rel="noopener">'아직 절대 강자는 없다' 불붙은 로봇 대전...한국이 패권 잡으려면</a>
             </div>
-            <div class="article-summary">피지컬 AI와 결합한 휴머노이드 로봇이 국내 산업 자동화의 새로운 해법으로 부상하고 있다. LLM과 비전 AI 융합으로 로봇이 환경 인식과 자율 판단 능력을 갖추게 됐다. 삼익THK는 AMR에 휴머노이드...</div>
+            <div class="article-summary">한국 휴머노이드 로봇 산업이 실증 단계로 진입했지만 피지컬 AI 소프트웨어에서 미·중에 뒤처져 있다. 레인보우로보틱스의 RB-Y1이 쿠팡 풀필먼트센터 실증에 돌입하는 등 현장 검증이 본격화됐다. K-휴머노이드...</div>
             <div class="article-meta">
-              <span>산업종합저널 FA</span>
-              <span>2026-03-10</span>
+              <span>머니투데이</span>
+              <span>2026-06-24</span>
             </div>
           </div>
           
@@ -240,131 +268,131 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions" target="_blank" rel="noopener">2025년 데이터센터 전기 사용량 급등, 병목 심화 속 해결책 경쟁 가열</a>
+              <a href="https://qz.com/ai-data-centers-gigawatt-power-grid-strain-051126" target="_blank" rel="noopener">AI 데이터센터 1기가와트 돌파…미국 전력망에 심각한 부담</a>
             </div>
-            <div class="article-summary">2025년 데이터센터 전력 수요가 전년 대비 17% 급증하며 AI 전력 위기가 현실화됐다. 소형모듈원전 조건부 공급 계약이 25GW에서 45GW로 두 배 가까이 늘어났다. 마이크로소프트는 스리마일아일랜드 원전...</div>
+            <div class="article-summary">2026년 5개의 기가와트급 AI 데이터센터가 가동을 시작할 전망이다. 데이터센터 전력 소비가 2030년까지 미국 발전량의 9~17%에 달할 것으로 예측된다. Talen이 아마존과 1,920MW 규모의 원전...</div>
             <div class="article-meta">
-              <span>IEA (국제에너지기구)</span>
-              <span>2026-04-15</span>
-            </div>
-          </div>
-          
-          <div class="article-card">
-            <div>
-              <span class="topic-tag" style="background:#92400E">에너지</span>
-              
-              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
-              
-            </div>
-            <div class="article-title">
-              <a href="https://www.esgtimes.kr/news/493930" target="_blank" rel="noopener">AI 데이터센터의 진짜 한계는 전력이었다… 차세대 전력 인프라가 바꾸는 경쟁의 판도</a>
-            </div>
-            <div class="article-summary">AI 데이터센터 경쟁의 핵심 제약이 GPU가 아닌 전력 인프라임이 명확해지고 있다. LS일렉트릭은 국내 데이터센터 전력 인프라의 70%를 담당하며 북미 수주 8000억을 돌파했다. 수소연료전지와 소형모듈원전이...</div>
-            <div class="article-meta">
-              <span>ESG타임즈</span>
-              <span>2026-05-20</span>
-            </div>
-          </div>
-          
-          <div class="article-card">
-            <div>
-              <span class="topic-tag" style="background:#7F1D1D">방산</span>
-              
-              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
-              
-            </div>
-            <div class="article-title">
-              <a href="https://www.defenseone.com/policy/2026/04/autonomous-weapons-warfare-joint-chiefs/413065/" target="_blank" rel="noopener">미 합참의장 "자율무기가 전쟁의 핵심·필수 요소가 될 것"</a>
-            </div>
-            <div class="article-summary">미 합참의장이 자율무기를 군사작전의 핵심·필수 요소로 공식 선언해 AI 전쟁 시대를 예고했다. 펜타곤 2026 회계연도 예산에 AI 자율 시스템에 134억 달러가 배정됐다. 자율전쟁그룹(DAWG) 예산이...</div>
-            <div class="article-meta">
-              <span>Defense One</span>
-              <span>2026-04-28</span>
-            </div>
-          </div>
-          
-          <div class="article-card">
-            <div>
-              <span class="topic-tag" style="background:#7F1D1D">방산</span>
-              
-              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
-              
-            </div>
-            <div class="article-title">
-              <a href="https://www.newsis.com/view/NISX20260531_0003650853" target="_blank" rel="noopener">네이버, '국방 AX TF' 신설…군 전용 AI 두뇌 만든다</a>
-            </div>
-            <div class="article-summary">네이버클라우드가 국방 AX 전담 TF를 출범시켜 군 전용 AI 지휘통제 플랫폼 개발에 나섰다. 정부가 2026년을 국방 AI 전환 원년으로 선언하며 민군 기술 협력이 본격화됐다. 네이버는 정찰·감시·통신...</div>
-            <div class="article-meta">
-              <span>뉴시스</span>
-              <span>2026-05-31</span>
-            </div>
-          </div>
-          
-          <div class="article-card">
-            <div>
-              <span class="topic-tag" style="background:#0F766E">헬스케어·바이오</span>
-              
-              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
-              
-            </div>
-            <div class="article-title">
-              <a href="https://blogs.nvidia.com/blog/ai-in-healthcare-survey-2026/" target="_blank" rel="noopener">방사선학부터 신약개발까지, AI가 헬스케어에서 명확한 투자 수익을 창출</a>
-            </div>
-            <div class="article-summary">2026년 NVIDIA 헬스케어 설문에서 방사선학부터 신약개발까지 AI의 명확한 ROI가 확인됐다. 일라이 릴리가 인실리코 메디신과 27억5000만 달러 규모 AI 신약 계약을 체결했다. 화이자는 AI로...</div>
-            <div class="article-meta">
-              <span>NVIDIA Blog</span>
-              <span>2026-05-15</span>
-            </div>
-          </div>
-          
-          <div class="article-card">
-            <div>
-              <span class="topic-tag" style="background:#0F766E">헬스케어·바이오</span>
-              
-              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
-              
-            </div>
-            <div class="article-title">
-              <a href="https://www.hankyung.com/article/2026031917011" target="_blank" rel="noopener">키메스 2026…AI 접목한 헬스케어·의료장비 한곳에 모았다</a>
-            </div>
-            <div class="article-summary">키메스 2026에 삼성·구글·네이버·카카오 등이 참여해 AI 헬스케어 비전을 한자리에 선보였다. 전시 대주제는 '첫 파동: 헬스케어에서의 AI'로 산업 전환의 원년임을 선언했다. 2026년은 주요 의료 AI...</div>
-            <div class="article-meta">
-              <span>한국경제</span>
-              <span>2026-03-19</span>
-            </div>
-          </div>
-          
-          <div class="article-card">
-            <div>
-              <span class="topic-tag" style="background:#6B21A8">반도체·HW인프라</span>
-              
-              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
-              
-            </div>
-            <div class="article-title">
-              <a href="https://fortune.com/2026/05/11/ai-memory-chips-semiconductor-stock-boom-price-hikes-dram-shortage-hbm/" target="_blank" rel="noopener">AI 투자자 몰리며 칩 주가 급등, 하버드 전문가 '이것도 지나가리라' 경고</a>
-            </div>
-            <div class="article-summary">AI 수요가 HBM 메모리 슈퍼사이클을 촉발하며 공급사들의 영업이익률이 60~70%에 달하고 있다. 엔비디아 B300은 HBM3E 288GB를 탑재해 H200 대비 두 배 이상 메모리를 제공한다. HBM 우선...</div>
-            <div class="article-meta">
-              <span>Fortune</span>
+              <span>Quartz</span>
               <span>2026-05-11</span>
             </div>
           </div>
           
           <div class="article-card">
             <div>
+              <span class="topic-tag" style="background:#92400E">에너지</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.mhns.co.kr/news/articleView.html?idxno=750686" target="_blank" rel="noopener">데이터센터 발 '탄소세 청구서' 쇼크…'AI 시대, SMR·원전 확충 속도 내야'</a>
+            </div>
+            <div class="article-summary">국내 AI 데이터센터 상위 10곳 완성 시 전력 5.26GW, 2100만 명분의 전기가 필요하다. 정부가 원전 2기와 SMR 1기 신규 건설을 14년 만에 확정하며 에너지 정책을 대전환했다. 수도권 데이터센터...</div>
+            <div class="article-meta">
+              <span>문화뉴스</span>
+              <span>2026-06-15</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#7F1D1D">방산</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.prnewswire.com/news-releases/next-defense-boom-autonomous-drones-emerging-as-a-multi-billion-dollar-military-technology-opportunity-302807434.html" target="_blank" rel="noopener">차세대 방산 붐: 자율 드론, 수십억 달러 규모 군사 기술 기회로 부상</a>
+            </div>
+            <div class="article-summary">글로벌 군사 드론 시장이 2026년 250억 달러를 돌파할 전망이다. Anduril이 2026년 5월 50억 달러를 유치하며 역대 최대 규모의 방산 민간 투자를 기록했다. 미국이 6월 5일 NSPM-11을...</div>
+            <div class="article-meta">
+              <span>PR Newswire</span>
+              <span>2026-06-10</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#7F1D1D">방산</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.g-enews.com/article/Global-Biz/2026/06/202606230954311212fbbec65dfb_1" target="_blank" rel="noopener">세계 방산 자금, AI·드론 스타트업에 123억 달러 폭주…K-방산 비상 전략은</a>
+            </div>
+            <div class="article-summary">글로벌 방산 투자금이 AI·드론 스타트업에 123억 달러 쏠리며 패러다임 전환이 가속되고 있다. 현대로템이 유로사토리 2026에서 AI 기반 다층 대드론 방호체계를 글로벌 최초 공개했다. K-방산이 화력체계...</div>
+            <div class="article-meta">
+              <span>글로벌이코노믹</span>
+              <span>2026-06-23</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#0F766E">헬스케어·바이오</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://nvidianews.nvidia.com/news/nvidia-and-lilly-announce-co-innovation-lab-to-reinvent-drug-discovery-in-the-age-of-ai" target="_blank" rel="noopener">NVIDIA·릴리, AI 공동혁신 랩 설립…신약 개발 재정의에 최대 10억 달러 투자</a>
+            </div>
+            <div class="article-summary">NVIDIA와 엘리 릴리가 5년간 최대 10억 달러를 투자하는 AI 공동혁신 랩을 설립했다. 에이전틱 습식 실험실과 계산 건식 실험실을 24시간 연결하는 '지속학습 시스템'을 구축할 계획이다. AI 신약 개발...</div>
+            <div class="article-meta">
+              <span>NVIDIA Newsroom</span>
+              <span>2026-06-10</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#0F766E">헬스케어·바이오</span>
+              
+              <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.kjob.news/news/498145" target="_blank" rel="noopener">SK바이오팜·메디데이터, AI로 신약 개발 판 바꾼다…BIO USA 2026서 전략 공개</a>
+            </div>
+            <div class="article-summary">SK바이오팜이 BIO USA 2026에서 AI 기반 전 주기 신약 개발 로드맵을 발표했다. 정부의 의료 AI 예산이 올해 930억 원에서 내년 2,478억 원으로 2.5배 증가한다. HLB생명과학R&D가 AI...</div>
+            <div class="article-meta">
+              <span>전국인력신문</span>
+              <span>2026-06-19</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#6B21A8">반도체·HW인프라</span>
+              
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.tweaktown.com/news/109495/sk-hynix-samsung-and-micron-fighting-for-nvidia-supply-contracts-for-new-16-hi-hbm4-orders/index.html" target="_blank" rel="noopener">SK하이닉스·삼성·마이크론, NVIDIA의 16단 HBM4 공급 계약 쟁탈전</a>
+            </div>
+            <div class="article-summary">엔비디아가 2026년 하반기 공급을 목표로 삼성·SK하이닉스·마이크론에 16단 HBM4 개발을 요청했다. 엔비디아의 2026 회계연도 매출은 2,159억 달러(전년 대비 65% 증가)로 데이터센터 매출이...</div>
+            <div class="article-meta">
+              <span>Tweaktown</span>
+              <span>2026-06-10</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
               <span class="topic-tag" style="background:#6B21A8">반도체·HW인프라</span>
               
               <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
               
             </div>
             <div class="article-title">
-              <a href="https://news.skhynix.co.kr/2026-market-outlook/" target="_blank" rel="noopener">2026년 시장 전망… "HBM이 이끄는 메모리 슈퍼사이클에 주목"</a>
+              <a href="https://www.etoday.co.kr/news/view/2589104" target="_blank" rel="noopener">HBM으로 달라진 K반도체 위상…AI 공급망 핵심축 됐다</a>
             </div>
-            <div class="article-summary">SK하이닉스 전망에 따르면 2026년 HBM 시장은 전년 대비 58% 성장한 546억 달러 규모다. HBM3E가 시장 주력 제품이며 차세대 HBM4로의 전환도 빠르게 진행 중이다. 엔비디아 루빈 GPU가...</div>
+            <div class="article-summary">컴퓨텍스 2026에서 K반도체 기업들이 HBM을 앞세워 AI 공급망의 핵심 축으로 부상했다. 삼성전자가 HBM5에 HPB 열관리 기술과 2나노 베이스 다이를 결합하며 SK하이닉스와의 경쟁을 본격화했다....</div>
             <div class="article-meta">
-              <span>SK하이닉스 뉴스룸</span>
-              <span>2026-01-10</span>
+              <span>이투데이</span>
+              <span>2026-06-05</span>
             </div>
           </div>
           
@@ -376,12 +404,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.globenewswire.com/news-release/2026/06/12/3311026/0/en/AI-Driven-Genomic-Revolution-Reshapes-50-Billion-GM-Foods-Market-as-Food-Security-Concerns-Intensify.html" target="_blank" rel="noopener">AI 기반 유전체 혁명이 500억 달러 GMO 식품 시장을 재편</a>
+              <a href="https://blog.mean.ceo/agritech-news-june-2026/" target="_blank" rel="noopener">AgriTech 뉴스 2026년 6월: 스마트 농업 스타트업, 글로벌 식량 안보 재편</a>
             </div>
-            <div class="article-summary">AI 기반 유전체 분석이 500억 달러 이상의 GMO 식품 시장을 근본적으로 재편하고 있다. 식량 안보 우려 심화로 AI 정밀 작물 개량이 기존 기간의 수분의 일로 단축됐다. 기후스마트 농업이 완화 전략에서...</div>
+            <div class="article-summary">정밀농업 시장이 2030년까지 231억 달러에 달할 전망이다. 미국 2026 농업법이 AI 정밀농업 도입 비용의 90%를 보전하는 조항을 신설했다. 농업 효율화가 반드시 환경 이익으로 이어지지는 않는다는...</div>
             <div class="article-meta">
-              <span>GlobeNewswire</span>
-              <span>2026-06-12</span>
+              <span>Mean CEO Blog</span>
+              <span>2026-06-01</span>
             </div>
           </div>
           
@@ -393,12 +421,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.rda.go.kr/board/board.do?mode=view&prgId=day_farmprmninfoEntry&dataNo=100000806197" target="_blank" rel="noopener">[보도자료] 인공지능(AI)으로 농가 수입 20% 늘린다. 농촌진흥청 '농업과학기술 AI 융합 전략' 발표</a>
+              <a href="https://www.newspim.com/news/view/20260624001006" target="_blank" rel="noopener">[AI로 읽는 경제] 반도체 나라 대만이 씨앗에 주목하는 이유…데이터와 기술로 만드는 농업 패권</a>
             </div>
-            <div class="article-summary">농촌진흥청이 AI 융합 전략을 발표하며 농가 소득 20% 증대라는 구체적 목표를 제시했다. 음성 질의응답과 이미지 병해충 판별 기능을 갖춘 농업 AI 에이전트가 올해 상반기 적용된다. 농식품부 AX스프린트는...</div>
+            <div class="article-summary">반도체 강국 대만이 데이터와 AI로 농업 패권을 노리며 종자·스마트농업에 전략적 투자를 단행하고 있다. 국내 농림부는 AI 응용제품 신속상용화 지원사업으로 스마트농업·푸드테크 기업을 지원 중이다. 정부가...</div>
             <div class="article-meta">
-              <span>농촌진흥청</span>
-              <span>2026-05-01</span>
+              <span>뉴스핌</span>
+              <span>2026-06-24</span>
             </div>
           </div>
           
@@ -410,12 +438,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.gartner.com/en/webinar/797437/1795012-manufacturing-predicts-2026-digital-twins-ai-agents-and-the-race-to-autonomous-operations" target="_blank" rel="noopener">가트너 2026 제조 예측: 디지털트윈·AI 에이전트와 자율 운영 경쟁</a>
+              <a href="https://news.samsung.com/global/samsung-electronics-announces-strategy-to-transition-global-manufacturing-into-ai-driven-factories-by-2030" target="_blank" rel="noopener">삼성전자, 2030년까지 전 세계 제조를 AI 팩토리로 전환 전략 발표</a>
             </div>
-            <div class="article-summary">가트너는 2030년까지 AI 에이전트가 핵심 생산 운영의 10%를 오케스트레이션할 것으로 예측했다. 디지털트윈과 실시간 AI 데이터 결합이 자기 최적화 생산 시스템을 구현하는 핵심이다. AI 기반 예지정비로...</div>
+            <div class="article-summary">삼성전자가 MWC 2026에서 2030년까지 전 세계 제조 공정을 AI 팩토리로 전환하는 전략을 발표했다. 디지털트윈 시뮬레이션과 품질관리·물류 전담 AI 에이전트 도입이 핵심이다. 현재 스마트팩토리의 실제...</div>
             <div class="article-meta">
-              <span>Gartner</span>
-              <span>2026-02-15</span>
+              <span>Samsung Newsroom</span>
+              <span>2026-06-15</span>
             </div>
           </div>
           
@@ -427,28 +455,11 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.industrynews.co.kr/news/articleView.html?idxno=77059" target="_blank" rel="noopener">[스페셜리포트] AI가 제어하는 공장 현실로… 2026년 자율제조 시대 개막</a>
+              <a href="https://smarttechkorea.com/pressrelease/?bmode=view&idx=171157259" target="_blank" rel="noopener">'불 꺼진 공장에서 AI가 스스로 생산한다'…STK 2026 AI 팩토리 엑스포 개최</a>
             </div>
-            <div class="article-summary">기구축 스마트팩토리 3만여 개가 AI 팩토리로 진화하며 자율제조 시대가 개막되고 있다. 정부는 AI 팩토리 500개 구축을 통해 산업 전반의 AI 전환을 가속화하고 있다. AI 플래닝을 적용한 로봇은 사이클...</div>
+            <div class="article-summary">STK 2026 AI 팩토리 엑스포에서 비전AI·디지털트윈·데이터 공정제어 통합 모델이 공개됐다. 슈나이더 일렉트릭이 NVIDIA 옴니버스와 전력관리 솔루션을 결합해 TSMC 팹에 적용한 사례를 소개했다....</div>
             <div class="article-meta">
-              <span>인더스트리뉴스</span>
-              <span>2026-04-01</span>
-            </div>
-          </div>
-          
-          <div class="article-card">
-            <div>
-              <span class="topic-tag" style="background:#B45309">AI거버넌스·규제</span>
-              
-              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
-              
-            </div>
-            <div class="article-title">
-              <a href="https://www.globalpolicywatch.com/2026/06/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions-2/" target="_blank" rel="noopener">EU AI법 개정: 일정 연장·간소화 및 신규 금지 조항 도입</a>
-            </div>
-            <div class="article-summary">EU 이사회·의회가 2026년 5월 AI법 개정에 합의하며 일정 연장과 규제 간소화를 추진했다. 독립형 고위험 AI 시스템의 준수 기한이 2027년 12월까지 연장됐다. 비동의 친밀 이미지 생성 AI와 아동...</div>
-            <div class="article-meta">
-              <span>Global Policy Watch</span>
+              <span>스마트테크코리아</span>
               <span>2026-06-10</span>
             </div>
           </div>
@@ -457,16 +468,33 @@
             <div>
               <span class="topic-tag" style="background:#B45309">AI거버넌스·규제</span>
               
+              <span class="topic-tag" style="background:#0EA5E9;margin-left:4px">해외</span>
+              
+            </div>
+            <div class="article-title">
+              <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/" target="_blank" rel="noopener">EU AI법 옴니버스: 이사회·의회, 규정 간소화 합의…고위험 AI 시한 16개월 연장</a>
+            </div>
+            <div class="article-summary">EU가 5월 7일 AI법 옴니버스 개정안에 합의해 고위험 AI 의무 시한을 최대 16개월 연장했다. 중소기업의 규제 샌드박스 접근성이 확대되고 AI 오피스 권한이 명확화됐다. EU AI법은 2026년 8월...</div>
+            <div class="article-meta">
+              <span>EU Council</span>
+              <span>2026-05-07</span>
+            </div>
+          </div>
+          
+          <div class="article-card">
+            <div>
+              <span class="topic-tag" style="background:#B45309">AI거버넌스·규제</span>
+              
               <span class="topic-tag" style="background:#10B981;margin-left:4px">국내</span>
               
             </div>
             <div class="article-title">
-              <a href="https://www.kjob.news/news/495096" target="_blank" rel="noopener">EU, AI법 집행 전담 과학패널·자문포럼 공식 발족…고위험 AI 규제 최대 16개월 연기</a>
+              <a href="https://www.shinkim.com/kor/media/newsletter/3114" target="_blank" rel="noopener">AI기본법 시행 6개월…규제 유예 속 고영향 AI 투명성 의무 적용 개시</a>
             </div>
-            <div class="article-summary">EU가 AI법 집행 전담 과학패널과 자문포럼을 2026년 6월 1일 공식 발족했다. 고위험 AI 시스템 규제가 최대 16개월 연기되며 국내 기업의 준비 시간이 확보됐다. 한국 AI 기본법이 2026년 1월...</div>
+            <div class="article-summary">AI기본법 시행 6개월을 맞아 정부가 기업 혼란을 최소화하기 위해 규제를 최소 1년 유예하기로 했다. 그러나 채용·대출·의료 등 10개 고영향 AI 영역의 투명성 의무는 즉시 적용 중이다. EU AI법 유예와...</div>
             <div class="article-meta">
-              <span>전국인력신문</span>
-              <span>2026-06-05</span>
+              <span>법무법인 세종</span>
+              <span>2026-06-10</span>
             </div>
           </div>
           
@@ -478,12 +506,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.startus-insights.com/innovators-guide/aerospace-trends/" target="_blank" rel="noopener">2026년 주목해야 할 항공우주 10대 트렌드</a>
+              <a href="https://qz.com/spacex-ai1-satellite-orbital-datacenter-ipo-061026" target="_blank" rel="noopener">스페이스X, AI1 위성 공개…보잉 747보다 넓은 궤도 AI 데이터센터</a>
             </div>
-            <div class="article-summary">AI가 항공우주 비정기 유지보수를 30% 절감하고 자율 운항 능력을 빠르게 향상시키고 있다. 지속가능항공유(SAF)는 미국 항공유의 0.6%에 불과하지만 의무화 정책으로 채택이 가속 전망이다. AI 기반...</div>
+            <div class="article-summary">스페이스X가 6월 8일 길이 70미터의 태양광 궤도 AI 컴퓨트 위성 'AI1'을 공개했다. AI1은 평균 120kW, 최대 150kW의 AI 연산을 우주에서 수행하는 궤도 데이터센터다. 스페이스X가...</div>
             <div class="article-meta">
-              <span>StartUs Insights</span>
-              <span>2026-01-15</span>
+              <span>Quartz</span>
+              <span>2026-06-10</span>
             </div>
           </div>
           
@@ -495,12 +523,12 @@
               
             </div>
             <div class="article-title">
-              <a href="https://www.kdrm.kr/news/articleView.html?idxno=601816" target="_blank" rel="noopener">우주항공청, 2026년 우주 R&D에 9,495억 투입…발사체·위성·달 착륙선·항공엔진 전방위 지원</a>
+              <a href="https://www.hankyung.com/amp/202606244811g" target="_blank" rel="noopener">대한항공, AI·무인기·UAM 총출동…미래 항공 생태계 제시</a>
             </div>
-            <div class="article-summary">우주항공청이 2026년 우주 R&D에 9495억 원을 투입하며 민간 주도 우주경제 가속에 나섰다. 다목적 실용위성 8호와 초고해상도 광학위성 핵심기술 개발이 올해 새롭게 시작됐다. 한국형...</div>
+            <div class="article-summary">대한항공이 국토교통기술대전에서 AI 기반 항공기 정비(MRO)·무인기·UAM 관제 솔루션을 공개했다. 우주항공청이 AI 기반 위성정보 활용서비스 착수보고회를 6월 22일 개최하고 지반변위 분석·해양환경 관리...</div>
             <div class="article-meta">
-              <span>드론매거진</span>
-              <span>2026-01-04</span>
+              <span>한국경제</span>
+              <span>2026-06-24</span>
             </div>
           </div>
           
