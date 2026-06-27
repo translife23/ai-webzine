@@ -1,0 +1,260 @@
+{
+  "week": "2026-W28",
+  "articles": [
+    {
+      "topic": "화폐금융",
+      "origin": "해외",
+      "title": "Smart Money, Smarter Systems: The Future of Central Bank Digital Currencies",
+      "title_ko": "스마트 머니, 스마트 시스템: 중앙은행 디지털화폐의 미래",
+      "url": "https://www.ainewsinternational.com/smart-money-smarter-systems-the-future-of-central-bank-digital-currencies/",
+      "source": "AI News International",
+      "published_date": "2026-06-20",
+      "summary": "AI is becoming the core infrastructure of CBDCs enabling fraud detection, real-time risk monitoring, and monetary policy simulation. 146 countries representing 98% of global GDP are exploring CBDCs. India proposed linking BRICS member digital currencies at the 2026 summit. The US Congress passed a law prohibiting the Fed from issuing retail CBDCs to the general public.",
+      "summary_ko": "146개국이 전 세계 GDP 98%를 대표하며 CBDC 도입을 검토 중이다.\nAI는 사기 탐지·위험 모니터링·통화정책 시뮬레이션에 활용된다.\n인도는 BRICS 회원국 디지털화폐 연동 방안을 2026년 정상회의에서 제안했다.\n미국 의회는 연준의 일반 대중 대상 디지털화폐 발행을 금지하는 법을 통과시켰다."
+    },
+    {
+      "topic": "화폐금융",
+      "origin": "국내",
+      "title": "안도걸 \"원화 스테이블코인 제도화 속도…여의치 않으면 단독 원 구성\"",
+      "title_ko": "안도걸 \"원화 스테이블코인 제도화 속도…여의치 않으면 단독 원 구성\"",
+      "url": "https://www.etoday.co.kr/news/view/2596482",
+      "source": "이투데이",
+      "published_date": "2026-06-20",
+      "summary": "Democratic Party lawmaker Ahn Do-gul highlighted won-denominated stablecoins as the financial infrastructure for the AI era. The Bank of Korea agreed on a two-track approach combining CBDC and stablecoins. A governance structure with bank consortia as major shareholders and fintech firms running operations is under discussion.",
+      "summary_ko": "안도걸 의원이 원화 스테이블코인을 AI 시대 금융 인프라로 지목했다.\nCBDC와 스테이블코인의 투트랙 병행 체계를 한국은행과 합의했다.\n스테이블코인은 결제·송금·토큰화 자본시장을 연결하는 핵심 역할을 한다.\n은행 연합이 대주주를 맡고 핀테크가 실제 경영을 주도하는 구조가 논의된다."
+    },
+    {
+      "topic": "금융투자",
+      "origin": "해외",
+      "title": "June 2026 Global Regulatory Brief: Tokenization, DORA incident reporting and AI supervision",
+      "title_ko": "2026년 6월 글로벌 규제 브리핑: 토큰화·DORA 보고·AI 감독 체계",
+      "url": "https://www.bloomberg.com/professional/insights/regulation/june-2026-global-regulatory-brief-digital-finance/",
+      "source": "Bloomberg Professional",
+      "published_date": "2026-06-15",
+      "summary": "IOSCO published a Supervisory Toolkit for AI Use in Capital Markets addressing investor protection, market integrity, and financial stability risks. Algorithmic trading market is projected to grow from $21.89B in 2025 to $25.04B in 2026 at a 14.4% CAGR. AI trading bots have become mainstream for retail investors. Model explainability and regulatory oversight remain key industry challenges.",
+      "summary_ko": "IOSCO가 자본시장 AI 활용에 관한 감독 툴킷을 발표했다.\n알고리즘 트레이딩 시장이 2026년 250억 달러 규모로 성장할 전망이다.\nAI 트레이딩 봇이 기관 투자자를 넘어 개인 투자자 시장에도 확산됐다.\n모델 설명 가능성과 규제 감독이 여전히 업계의 핵심 과제로 남아 있다."
+    },
+    {
+      "topic": "금융투자",
+      "origin": "국내",
+      "title": "2026년 글로벌 대전환과 한국 혁신의 길: AI가 주도하는 경제·금융·통신의 미래",
+      "title_ko": "2026년 글로벌 대전환과 한국 혁신의 길: AI가 주도하는 경제·금융·통신의 미래",
+      "url": "https://insight.goover.ai/report/202605/go-public-report-ko-a4adb06c-ab94-42ac-8a6d-20129e657042-0-0.html",
+      "source": "Goover AI 인사이트",
+      "published_date": "2026-05-20",
+      "summary": "Stanford HAI's AI Index 2026 ranked South Korea as the world's third-largest AI model developer. Korea's Basic AI Act took effect in January 2026, making it the second country with a comprehensive AI regulatory framework. AI-based financial services are rapidly expanding across investment, insurance, and banking sectors.",
+      "summary_ko": "스탠퍼드 HAI가 한국을 AI 모델 부문 세계 3위로 평가했다.\nAI 기본법 시행으로 한국이 세계 두 번째 포괄적 AI 규제국이 됐다.\nAI 기반 투자·보험·은행 서비스가 금융 전 부문으로 빠르게 확산 중이다.\nAI 금융 전환이 가속화되며 투자 기회와 규제 과제가 동시에 부각된다."
+    },
+    {
+      "topic": "로봇",
+      "origin": "해외",
+      "title": "How Physical AI Is Reshaping Robotics Today—and What Comes Next",
+      "title_ko": "피지컬 AI가 오늘의 로보틱스를 재편하다: 현재와 미래 전망",
+      "url": "https://www.bcg.com/publications/2026/how-physical-ai-is-reshaping-robotics-today",
+      "source": "BCG",
+      "published_date": "2026-06-10",
+      "summary": "The global robotics market reached $38B with 12 humanoid robot models commercially available. Unitree leads volume with 5,500+ units shipped in 2025, targeting 10k-20k+ in 2026. Amazon's Sequoia system improved inventory identification and storage speeds by 75%. Logistics/warehousing, semiconductor manufacturing, and food service account for 64% of all commercial robot deployments.",
+      "summary_ko": "글로벌 로봇 시장이 380억 달러에 달하며 12개 휴머노이드 모델이 상용화됐다.\nUnitree는 2025년 5,500대 이상을 출하하고 2026년 두 배 확대를 목표로 한다.\n아마존 Sequoia 시스템이 물류 재고 식별 속도를 75% 개선하는 성과를 거뒀다.\n물류·창고 분야가 전체 상용 로봇 배치의 41%를 차지하며 도입을 주도하고 있다."
+    },
+    {
+      "topic": "로봇",
+      "origin": "국내",
+      "title": "티로보틱스, STK 2026서 산업용 휴머노이드 로봇 'TR-WORKS' 선보여",
+      "title_ko": "티로보틱스, STK 2026서 산업용 휴머노이드 로봇 'TR-WORKS' 선보여",
+      "url": "https://news.nate.com/view/20260612n26794",
+      "source": "네이트뉴스",
+      "published_date": "2026-06-12",
+      "summary": "Tirobotics unveiled its industrial humanoid robot TR-WORKS at STK 2026 in Seoul COEX. The robot stands 180cm tall and weighs 180kg, supporting up to 3kg payload for factory logistics. Major Korean conglomerates including Hyundai Motor and Samsung are making large investments in humanoid robots. Analysts say regulatory reform and ecosystem building are essential for Korea to lead in humanoid robotics.",
+      "summary_ko": "티로보틱스가 STK 2026에서 산업용 휴머노이드 TR-WORKS를 처음 공개했다.\n높이 180cm·무게 180kg으로 공정물류 자동화를 위해 개발된 로봇이다.\n현대차·삼성 등 대기업이 휴머노이드 로봇 시장에 대규모 투자를 시작했다.\n패권 확보를 위해 규제 완화와 산학 협력 생태계 구축이 시급하다는 분석이 나온다."
+    },
+    {
+      "topic": "에너지",
+      "origin": "해외",
+      "title": "Data centre electricity use surged in 2025, even with tightening bottlenecks driving a scramble for solutions",
+      "title_ko": "2025년 데이터센터 전력 수요 급증…전력 병목이 AI 인프라 확장을 옥죄다",
+      "url": "https://www.iea.org/news/data-centre-electricity-use-surged-in-2025-even-with-tightening-bottlenecks-driving-a-scramble-for-solutions",
+      "source": "IEA",
+      "published_date": "2026-06-17",
+      "summary": "Data centre electricity use surged 17% in 2025, with AI-focused data centres growing even faster. Electricity consumption is set to double by 2030, with AI-focused data centre power use poised to triple. The pipeline of conditional SMR offtake agreements grew from 25GW to 45GW. The tech sector accounts for 40% of all corporate renewable power purchase agreements.",
+      "summary_ko": "2025년 데이터센터 전력 소비가 17% 급증하며 AI 전용 시설은 더 빠르게 성장했다.\n데이터센터 전력 수요는 2030년까지 2배, AI 전용은 3배로 늘어날 전망이다.\nSMR 조건부 구매 계약 파이프라인이 25GW에서 45GW로 두 배 가까이 증가했다.\n기술 기업들이 전체 기업 재생에너지 구매 계약의 40%를 차지하고 있다."
+    },
+    {
+      "topic": "에너지",
+      "origin": "국내",
+      "title": "데이터센터 발 '탄소세 청구서' 쇼크… \"AI 시대, SMR·원전 확충 속도 내야\"",
+      "title_ko": "데이터센터 발 '탄소세 청구서' 쇼크… \"AI 시대, SMR·원전 확충 속도 내야\"",
+      "url": "https://www.mhns.co.kr/news/articleView.html?idxno=750686",
+      "source": "매일헬스뉴스",
+      "published_date": "2026-06-22",
+      "summary": "AI data centre expansion in Korea is intensifying carbon tax pressures and accelerating the push for nuclear and SMR expansion. GS Group is discussing building 1.2GW AI data centres near power plants in Dangjin and Donghae. New large nuclear power plant sites were confirmed as Yeongdeok and Gijang. The government is pursuing an energy highway policy combining HVDC and smart grid technologies.",
+      "summary_ko": "AI 데이터센터 확산으로 탄소세 부담 증가와 전력 공급 위기가 심화되고 있다.\nGS·SK·NHN 등 대기업이 비수도권에 GW급 AI 데이터센터 건설을 추진 중이다.\n신규 대형 원전 2기와 SMR 1기 부지가 경북 영덕·부산 기장으로 최종 확정됐다.\n정부는 HVDC·스마트그리드 결합 에너지 고속도로 정책으로 해법을 모색하고 있다."
+    },
+    {
+      "topic": "방산",
+      "origin": "해외",
+      "title": "Autonomous weapons will be 'key part' of US warfare: Joint Chiefs chairman",
+      "title_ko": "미국 합참의장 \"자율 무기는 미래 전쟁의 핵심 요소가 될 것\"",
+      "url": "https://www.defenseone.com/policy/2026/04/autonomous-weapons-warfare-joint-chiefs/413065/",
+      "source": "Defense One",
+      "published_date": "2026-04-15",
+      "summary": "US Joint Chiefs Chairman Gen. Dan Caine stated autonomous weapons are a 'key and essential part of everything we do.' The Pentagon signed AI integration agreements with OpenAI, Google, Microsoft, Amazon, and SpaceX. AI-enabled drones in Ukraine achieved strike accuracies 3-4x higher than human-piloted systems. The global military drone sector is projected to surpass $25B by 2026.",
+      "summary_ko": "미국 합참의장이 자율 무기를 미래 전쟁의 핵심 필수 요소로 공식 규정했다.\n펜타곤이 OpenAI·구글·MS·아마존·스페이스X와 AI 군사 통합 협약을 맺었다.\n우크라이나에 배치된 AI 드론은 인간 조종 대비 3~4배 높은 명중률을 기록했다.\n글로벌 군용 드론 시장은 2026년 250억 달러를 돌파할 전망이다."
+    },
+    {
+      "topic": "방산",
+      "origin": "국내",
+      "title": "네이버, '국방 AX TF' 신설…군 전용 AI 두뇌 만든다",
+      "title_ko": "네이버, '국방 AX TF' 신설…군 전용 AI 두뇌 만든다",
+      "url": "https://www.newsis.com/view/NISX20260531_0003650853",
+      "source": "뉴시스",
+      "published_date": "2026-05-31",
+      "summary": "Naver established a dedicated Defense AI Transformation Task Force to develop military-specific AI systems. Hanwha Systems, Naver Cloud, KAIST, and POSTECH are collaborating for defense AI self-reliance. Korea's defense R&D budget increased in 2026, with expanded state support for AI autonomous weapons systems. Global defense VC investment nearly doubled year-on-year, spotlighting defense deep-tech startups.",
+      "summary_ko": "네이버가 국방 AI 전환 전담 TF를 신설해 군 전용 AI 개발에 착수했다.\n한화시스템·네이버클라우드·KAIST 등이 협력해 국방 AI 기술 자립을 추진한다.\n방산 R&D 예산 확대와 함께 AI 자율무기체계 개발 지원이 본격화됐다.\n글로벌 방산 VC 투자가 전년 동기 대비 2배로 급증하며 딥테크 방산이 부각된다."
+    },
+    {
+      "topic": "헬스케어·바이오",
+      "origin": "해외",
+      "title": "2026: the year AI stops being optional in drug discovery",
+      "title_ko": "2026년: AI 신약 개발은 이제 선택이 아닌 필수가 됐다",
+      "url": "https://www.drugtargetreview.com/2026-the-year-ai-stops-being-optional-in-drug-discovery/682243.article",
+      "source": "Drug Target Review",
+      "published_date": "2026-06-05",
+      "summary": "AI-discovered drugs achieve Phase I success rates of 80-90%, with over 3,000 AI-assisted drugs in development. Eli Lilly signed a landmark $2.75B deal with Insilico Medicine for AI-discovered drug candidates. Multiple AI-designed drug candidates are expected to reach critical clinical milestones in 2026. UnitedHealth projects AI could save nearly $1B in healthcare costs in 2026.",
+      "summary_ko": "AI 신약은 임상 1상 성공률 80~90%를 기록하며 3,000개 이상이 개발 중이다.\n일라이릴리가 인실리코 메디슨과 27억5천만 달러 규모의 AI 신약 독점 계약을 맺었다.\n2026년 여러 AI 설계 신약 후보물질이 임상 핵심 이정표에 도달할 것으로 예상된다.\nUnitedHealth는 2026년 AI로 약 10억 달러의 의료비를 절감할 것으로 전망한다."
+    },
+    {
+      "topic": "헬스케어·바이오",
+      "origin": "국내",
+      "title": "AI가 설계·로봇이 합성…JW중외, 신약 R&D 패러다임 전환",
+      "title_ko": "AI가 설계·로봇이 합성…JW중외, 신약 R&D 패러다임 전환",
+      "url": "https://www.medicaltimes.com/Main/News/NewsView.html?ID=1169302",
+      "source": "메디칼타임즈",
+      "published_date": "2026-06-10",
+      "summary": "JW Pharmaceutical was selected for the Ministry of Health's 2026 AI-based drug discovery project to advance generative AI and AI agent-based small molecule platforms. LG Chem signed a joint research agreement with UK-based Labgenieur Therapeutics for multi-antibody anticancer drug discovery using AI. SK Biopharmaceuticals presented its AI drug discovery strategy at BIO USA 2026. Korea's non-face-to-face medical consultation amendment takes effect in December 2026.",
+      "summary_ko": "JW중외제약이 AI·로봇 기반 저분자 신약 개발 플랫폼 고도화 국책 과제를 수주했다.\nLG화학이 영국 랩지니어스와 AI 기반 다중항체 항암신약 공동 발굴 계약을 체결했다.\nSK바이오팜은 BIO USA 2026에서 AI 신약 전략과 디지털 전환 로드맵을 공개했다.\n비대면 진료 의료법 개정안이 2026년 12월 본격 시행을 앞두고 있다."
+    },
+    {
+      "topic": "반도체·HW인프라",
+      "origin": "해외",
+      "title": "AI Chip Manufacturing Demand Creates Historic Shortage",
+      "title_ko": "AI 칩 수요 폭증으로 사상 최악의 반도체 공급 부족 사태 발생",
+      "url": "https://www.bloomberg.com/graphics/2026-ai-boom-memory-chip-shortage/",
+      "source": "Bloomberg",
+      "published_date": "2026-06-12",
+      "summary": "HBM is already sold out for 2026, with Microsoft, Google, and Meta pleading for additional capacity from SK Hynix and Samsung. Nvidia's B300 carries 288GB of HBM3E, more than double the H200. Memory could account for roughly 30% of hyperscaler AI spending in 2026, up from 8% in 2023. TSMC's CEO stated supply cannot meet demand until 2027.",
+      "summary_ko": "2026년 HBM 물량이 이미 매진되며 MS·구글·메타가 한국 업체에 물량 확보를 호소 중이다.\n엔비디아 B300은 288GB HBM3E를 탑재해 H200 대비 메모리를 두 배 이상 늘렸다.\n메모리가 하이퍼스케일러 AI 지출의 약 30%를 차지하며 2023년의 4배 수준에 달했다.\nTSMC CEO는 공급이 수요를 따라잡는 시점을 2027년으로 내다봤다."
+    },
+    {
+      "topic": "반도체·HW인프라",
+      "origin": "국내",
+      "title": "Nvidia's 16-layer HBM push raises stakes for memory chip-makers",
+      "title_ko": "엔비디아의 16단 HBM 요구로 삼성·SK하이닉스 기술 경쟁이 가열된다",
+      "url": "https://www.koreaherald.com/article/10645471",
+      "source": "코리아헤럴드",
+      "published_date": "2026-06-18",
+      "summary": "Nvidia has asked major memory suppliers whether they could deliver 16-layer HBM in Q4 2026. Samsung is expanding HBM production capacity by approximately 50% in 2026, while SK Hynix is increasing investment by more than four times. SK Hynix formed an alliance with TSMC to co-develop HBM4. HBM now takes 23% of total DRAM wafer starts, creating unprecedented demand pressure.",
+      "summary_ko": "엔비디아가 2026년 4분기 16단 HBM 납품 가능 여부를 주요 메모리 업체에 타진했다.\n삼성은 HBM 생산 능력을 50% 확대하고 SK하이닉스는 4배 이상 투자를 늘린다.\nSK하이닉스는 TSMC와 HBM4 공동 개발 동맹을 맺어 차세대 기술 선점에 나섰다.\nHBM이 전체 DRAM 웨이퍼의 23%를 차지하며 전례 없는 수급 압박이 이어지고 있다."
+    },
+    {
+      "topic": "농업·푸드테크",
+      "origin": "해외",
+      "title": "Agriculture in 2026: Moving From AI Hype to ROI & Resilience",
+      "title_ko": "2026년 농업: AI 과대 광고를 넘어 실질적 ROI와 기후 회복력으로",
+      "url": "https://www.icl-group.com/blog/agriculture-in-2026-moving-from-ai-hype-to-roi-resilience/",
+      "source": "ICL Group",
+      "published_date": "2026-06-08",
+      "summary": "The agriculture sector in 2026 is shifting from AI hype to measurable ROI with climate resilience as the defining theme. Autonomous tractors, robotic harvesters, and AI-driven precision tools are being deployed at scale. Cultured meat and precision fermentation are advancing as alternative protein sources. AI crop monitoring and predictive analytics help farmers manage climate stress.",
+      "summary_ko": "2026년 농업 AI는 과대 광고에서 벗어나 측정 가능한 투자 수익 단계로 진입했다.\n자율 트랙터·로봇 수확기·AI 정밀 도구가 대규모로 농업 현장에 배치되고 있다.\n배양육과 정밀 발효 기술이 대체 단백질 공급원으로 빠르게 상용화되고 있다.\nAI 작물 모니터링과 예측 분석이 기후 스트레스 대응 핵심 도구로 자리잡았다."
+    },
+    {
+      "topic": "농업·푸드테크",
+      "origin": "국내",
+      "title": "AI가 알려주는 농산물 최저가…농식품부 '알뜰소비 플랫폼' 추진",
+      "title_ko": "AI가 알려주는 농산물 최저가…농식품부 '알뜰소비 플랫폼' 추진",
+      "url": "https://www.foodtoday.or.kr/news/article.html?no=200300",
+      "source": "식품오늘",
+      "published_date": "2026-06-15",
+      "summary": "The Ministry of Agriculture is developing an AI-based price comparison platform to guide consumers to the lowest agricultural product prices. The AX Sprint project supports AI-based rapid commercialization across agricultural production, distribution, and rural services. The FoodTech Industry Promotion Act came into full effect in 2026. AI-based personalized diet services were highlighted as a next-generation growth engine.",
+      "summary_ko": "농식품부가 AI로 농산물 최저가를 안내하는 알뜰소비 플랫폼 개발에 나섰다.\nAX스프린트 지원사업으로 농업 생산·유통·농촌 서비스 AI화가 추진된다.\n푸드테크 산업 육성법이 2026년 본격 시행되며 기술 혁신이 현장에 적용된다.\nAI 맞춤형 개인 식단 서비스가 차세대 식품 산업의 성장 동력으로 부각된다."
+    },
+    {
+      "topic": "제조·스마트팩토리",
+      "origin": "해외",
+      "title": "From the Editor: Eight AI Trends Reshaping Industrial Operations in 2026",
+      "title_ko": "2026년 산업 현장을 재편하는 8대 AI 트렌드",
+      "url": "https://www.automation.com/article/eight-ai-trends-reshaping-industrial-operations-2026",
+      "source": "Automation.com",
+      "published_date": "2026-06-01",
+      "summary": "Predictive maintenance, computer vision inspection, and AI-driven process optimization are delivering measurable results on production floors. Gartner predicts semiautonomous AI agents will orchestrate 10% of key production operations by 2030, up from 2% today. More than 40% of manufacturers will adopt AI-based real-time scheduling systems in 2026, rising to 65% by 2030. AI can lower manufacturing maintenance costs by 25-40%.",
+      "summary_ko": "예지보전·컴퓨터 비전 검사·AI 공정 최적화가 생산 현장에서 실질적 성과를 내고 있다.\n가트너는 2030년까지 반자율 AI 에이전트가 생산·품질·정비의 10%를 담당한다고 예측한다.\n제조사 40% 이상이 AI 기반 실시간 스케줄링 시스템을 2026년 도입할 것으로 전망한다.\nAI를 통해 제조 유지보수 비용을 25~40%까지 절감할 수 있는 것으로 나타났다."
+    },
+    {
+      "topic": "제조·스마트팩토리",
+      "origin": "국내",
+      "title": "[AI FACTORY EXPO] \"불 꺼진 공장에서 AI가 스스로 생산한다\"…STK 2026 AI 팩토리 엑스포 개최",
+      "title_ko": "[AI FACTORY EXPO] \"불 꺼진 공장에서 AI가 스스로 생산한다\"…STK 2026 AI 팩토리 엑스포 개최",
+      "url": "https://smarttechkorea.com/pressrelease/?bmode=view&idx=171157259",
+      "source": "스마트테크코리아",
+      "published_date": "2026-06-12",
+      "summary": "The Ministry of SMEs-sponsored AI Factory Expo was held at COEX Seoul from June 10 to 12 as part of STK 2026. The concept of a dark factory operating autonomously 24 hours is becoming a reality. Dell Technologies and Naver Cloud participated alongside domestic AI solution providers. Surveys show 18% of smart factory adopters reported no effect, highlighting the importance of on-site understanding.",
+      "summary_ko": "중기부 주최 AI 팩토리 엑스포가 6월 코엑스에서 성황리에 개최됐다.\n불 꺼진 채 AI가 24시간 자율 운영하는 다크 팩토리가 현실화되고 있다.\n글로벌·국내 기업들이 AI·디지털트윈 기반 스마트팩토리 기술을 선보였다.\nAI 도입 후 18%가 효과 없다는 조사 결과로 현장 이해 기반 구축이 과제로 남는다."
+    },
+    {
+      "topic": "AI거버넌스·규제",
+      "origin": "해외",
+      "title": "EU AI Act Update: Timeline Relief, Targeted Simplification, and New Prohibitions",
+      "title_ko": "EU AI법 개정: 일정 완화·간소화·새 금지 조항 추가",
+      "url": "https://www.globalpolicywatch.com/2026/05/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions/",
+      "source": "Global Policy Watch",
+      "published_date": "2026-05-08",
+      "summary": "On May 7, 2026, EU negotiators reached provisional agreement on the Digital Omnibus on AI, the first amendments to the EU AI Act since June 2024. High-risk AI system obligations under Annex III are deferred from August 2026 to December 2027. Two new prohibited AI practices were added: CSAM generation and non-consensual intimate imagery. Korea's Basic AI Act and Vietnam's first AI law are both effective in 2026.",
+      "summary_ko": "2026년 5월 EU가 AI법 디지털 옴니버스 개정 잠정 합의를 이뤘다.\n부속서 III 고위험 AI 의무 이행 시한이 2026년 8월에서 2027년 12월로 연기됐다.\nCSAM 생성 및 비동의 친밀 콘텐츠 조작이 새로운 AI 금지 행위로 추가됐다.\n한국 AI 기본법·베트남 AI법도 2026년 발효되며 글로벌 규제 지형이 재편되고 있다."
+    },
+    {
+      "topic": "AI거버넌스·규제",
+      "origin": "국내",
+      "title": "한국 AI 규제, 트럼프의 완화·EU의 강규제 사이에서 독자 노선을 찾아야 한다",
+      "title_ko": "한국 AI 규제, 트럼프의 완화·EU의 강규제 사이에서 독자 노선을 찾아야 한다",
+      "url": "https://www.koreaiin.com/news/910810",
+      "source": "한국IT산업뉴스",
+      "published_date": "2026-06-15",
+      "summary": "Korea's Basic AI Act took effect on January 22, 2026, making Korea the world's second country with a comprehensive AI regulatory framework. Korea must chart its own path between US deregulation and EU strict regulation. High-impact AI business operators must document and manage training data sources and scale. During the first year, violations result only in correction orders, with fines deferred.",
+      "summary_ko": "AI 기본법이 2026년 1월 시행되며 한국이 세계 두 번째 포괄적 AI 규제국이 됐다.\n미국 완화 기조와 EU 강규제 사이에서 한국형 독자 AI 규제 노선이 요구된다.\n고영향 AI 사업자는 학습 데이터 출처와 규모를 기록·관리하는 체계를 갖춰야 한다.\n시행 첫해는 위반 시 시정명령만 내려지며 과태료 부과는 유예 중이다."
+    },
+    {
+      "topic": "항공우주·SAF",
+      "origin": "해외",
+      "title": "Space Technology - June 2026",
+      "title_ko": "2026년 6월 우주 기술 동향: AI가 주도하는 우주 경제 확산",
+      "url": "https://www.techbriefs.com/component/content/article/55397-doc-9941",
+      "source": "Tech Briefs",
+      "published_date": "2026-06-01",
+      "summary": "The WEF announced its June 2026 Technology Pioneers cohort of 100 companies building next-era AI infrastructure. OrbitAID is developing on-orbit satellite servicing technologies including refuelling, repair, and de-orbiting. The satellite industry projects 58,000 satellites in Earth orbit by 2030. SAF accounted for just 0.6% of US jet fuel consumption last year, with the industry under pressure to accelerate adoption.",
+      "summary_ko": "세계경제포럼이 차세대 AI 인프라를 구축하는 기술 선구자 100개사를 선정했다.\nOrbitAID 등 기업이 위성 연료 보급·수리·탈궤도 온궤도 서비스 기술을 개발 중이다.\n2030년까지 지구 궤도에 5만8천 개 위성이 배치될 것으로 위성 업계가 전망했다.\nSAF는 미국 제트 연료의 0.6%에 불과해 확대 속도 가속화 압력이 커지고 있다."
+    },
+    {
+      "topic": "항공우주·SAF",
+      "origin": "국내",
+      "title": "대한항공, AI·무인기·UAM 총출동…미래 항공 생태계 제시",
+      "title_ko": "대한항공, AI·무인기·UAM 총출동…미래 항공 생태계 제시",
+      "url": "https://www.hankyung.com/amp/202606244811g",
+      "source": "한국경제",
+      "published_date": "2026-06-24",
+      "summary": "Korean Air showcased AI-based aviation maintenance technology and the ACROSS integrated UAM traffic management solution at the 2026 National Land and Transportation Technology Expo. The Korea Aerospace Administration kicked off its AI-based satellite information utilization service expansion project on June 22. Demonstration projects using satellite images are underway in Jeju and South Jeolla. 81 institutions and 409 booths participated in the expo.",
+      "summary_ko": "대한항공이 2026 국토교통기술대전에서 AI 정비와 UAM 통합 관리 솔루션을 공개했다.\n우주항공청이 AI 기반 위성정보 활용 서비스 확산 사업을 6월 착수했다.\n제주·전남에서 위성영상으로 지반 위험 분석과 해양 환경 관리 실증이 시작됐다.\n81개 기관이 참여한 기술대전에 UAM·AI시티·우주항공 최신 기술이 집결했다."
+    }
+  ],
+  "topics_covered": [
+    "화폐금융",
+    "금융투자",
+    "로봇",
+    "에너지",
+    "방산",
+    "헬스케어·바이오",
+    "반도체·HW인프라",
+    "농업·푸드테크",
+    "제조·스마트팩토리",
+    "AI거버넌스·규제",
+    "항공우주·SAF"
+  ]
+}
