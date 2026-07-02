@@ -1,11 +1,12 @@
 {
   "week": "2026-W27",
-  "status": "PUBLISHED",
+  "status": "THEME_PLAN_READY",
   "timeline": {
     "news_search_started": "2026-06-20T08:20:50.078527+00:00",
     "news_search_completed": "2026-06-20T08:20:50.078527+00:00",
     "publishing_started": "2026-06-23T20:22:14.384703+00:00",
-    "published": "2026-06-23T20:22:14.384720+00:00"
+    "published": "2026-06-23T20:22:14.384720+00:00",
+    "theme_plan_submitted": "2026-07-02T04:24:03.900542+00:00"
   },
   "topics_covered": [
     "화폐금융",
